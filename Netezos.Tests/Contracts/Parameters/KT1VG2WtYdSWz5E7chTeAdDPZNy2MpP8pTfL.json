@@ -11,7 +11,7 @@
               {
                 "prim": "Pair",
                 "args": [
-                  { "string": "tz1NtyYYfMne4HJ763ShzaSKexv6t2cP3GUJ" },
+                  { "string": "mv18HYgdC6wq9Mxawuq14n1irRXzD14pwa8c" },
                   {
                     "prim": "Pair",
                     "args": [
@@ -35,7 +35,7 @@
     "human": {
       "entrypoint": "initiate",
       "value": {
-        "participant": "tz1NtyYYfMne4HJ763ShzaSKexv6t2cP3GUJ",
+        "participant": "mv18HYgdC6wq9Mxawuq14n1irRXzD14pwa8c",
         "settings": {
           "hashed_secret": "db30a83473247ef9c36960c8f809b88bebf31511ee758425e70dfc9644b77c1e",
           "refund_time": "2020-11-01T03:50:02Z",

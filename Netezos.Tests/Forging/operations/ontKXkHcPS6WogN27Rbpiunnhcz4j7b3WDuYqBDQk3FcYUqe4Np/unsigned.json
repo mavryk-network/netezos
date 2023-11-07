@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "transaction",
-      "source": "tz1SJJY253HoEda8PS5vvfHVtyghgK3CTS2z",
+      "source": "mv1PaZJhgqzNfrw4AeX63VaxHjKyWSo4sL2Q",
       "fee": "5933",
       "counter": "133570",
       "gas_limit": "36860",
@@ -20,7 +20,7 @@
                 "prim": "address"
               },
               {
-                "string": "tz1SJJY253HoEda8PS5vvfHVtyghgK3CTS2z"
+                "string": "mv1PaZJhgqzNfrw4AeX63VaxHjKyWSo4sL2Q"
               }
             ]
           },
@@ -79,7 +79,7 @@
                   "prim": "PUSH",
                   "args": [
                     {
-                      "prim": "mutez"
+                      "prim": "mumav"
                     },
                     {
                       "int": "1"
@@ -123,7 +123,7 @@
     },
     {
       "kind": "origination",
-      "source": "tz1SJJY253HoEda8PS5vvfHVtyghgK3CTS2z",
+      "source": "mv1PaZJhgqzNfrw4AeX63VaxHjKyWSo4sL2Q",
       "fee": "0",
       "counter": "133571",
       "gas_limit": "15555",
@@ -206,7 +206,7 @@
                         "prim": "PUSH",
                         "args": [
                           {
-                            "prim": "mutez"
+                            "prim": "mumav"
                           },
                           {
                             "int": "0"
@@ -325,7 +325,7 @@
           }
         ],
         "storage": {
-          "string": "tz1SJJY253HoEda8PS5vvfHVtyghgK3CTS2z"
+          "string": "mv1PaZJhgqzNfrw4AeX63VaxHjKyWSo4sL2Q"
         }
       }
     }

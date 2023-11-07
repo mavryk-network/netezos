@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "transaction",
-      "source": "tz1LbSsDSmekew3prdDGx1nS22ie6jjBN6B3",
+      "source": "mv1WGBzwKKeF18T2GQdqgfQ8XBwvEkibeQ2v",
       "fee": "4016",
       "counter": "163",
       "gas_limit": "36601",
@@ -31,7 +31,7 @@
                 "prim": "address"
               },
               {
-                "string": "tz1LbSsDSmekew3prdDGx1nS22ie6jjBN6B3"
+                "string": "mv1WGBzwKKeF18T2GQdqgfQ8XBwvEkibeQ2v"
               }
             ]
           },
@@ -65,7 +65,7 @@
             "prim": "PUSH",
             "args": [
               {
-                "prim": "mutez"
+                "prim": "mumav"
               },
               {
                 "int": "1000000"

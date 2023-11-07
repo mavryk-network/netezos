@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "smart_rollup_execute_outbox_message",
-      "source": "tz1hbDyUvU6YRwmFSmSc2b16VT3pab491ujh",
+      "source": "mv1RMgNra5Eb9wZbypfUxpGuchtvFXdx4Hpj",
       "fee": "1631",
       "counter": "31321",
       "gas_limit": "6510",

@@ -3,13 +3,13 @@
   "contents": [
     {
       "kind": "origination",
-      "source": "tz1YvE7Sfo92ueEPEdZceNWd5MWNeMNSt16L",
+      "source": "mv1RegYNxBpmx4CcUMUpupjArb6qnWozH52W",
       "fee": "2053",
       "counter": "419851",
       "gas_limit": "15678",
       "storage_limit": "509",
       "balance": "1000000",
-      "delegate": "tz1YvE7Sfo92ueEPEdZceNWd5MWNeMNSt16L",
+      "delegate": "mv1RegYNxBpmx4CcUMUpupjArb6qnWozH52W",
       "script": {
         "code": [
           {
@@ -87,7 +87,7 @@
                         "prim": "PUSH",
                         "args": [
                           {
-                            "prim": "mutez"
+                            "prim": "mumav"
                           },
                           {
                             "int": "0"

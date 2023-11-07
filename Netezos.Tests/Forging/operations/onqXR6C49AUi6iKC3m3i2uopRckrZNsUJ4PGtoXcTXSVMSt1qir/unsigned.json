@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "reveal",
-      "source": "tz1LbSsDSmekew3prdDGx1nS22ie6jjBN6B3",
+      "source": "mv1WGBzwKKeF18T2GQdqgfQ8XBwvEkibeQ2v",
       "fee": "1258",
       "counter": "155",
       "gas_limit": "10000",
@@ -12,7 +12,7 @@
     },
     {
       "kind": "origination",
-      "source": "tz1LbSsDSmekew3prdDGx1nS22ie6jjBN6B3",
+      "source": "mv1WGBzwKKeF18T2GQdqgfQ8XBwvEkibeQ2v",
       "fee": "1947",
       "counter": "156",
       "gas_limit": "15655",
@@ -95,7 +95,7 @@
                         "prim": "PUSH",
                         "args": [
                           {
-                            "prim": "mutez"
+                            "prim": "mumav"
                           },
                           {
                             "int": "0"
@@ -214,7 +214,7 @@
           }
         ],
         "storage": {
-          "string": "tz1LbSsDSmekew3prdDGx1nS22ie6jjBN6B3"
+          "string": "mv1WGBzwKKeF18T2GQdqgfQ8XBwvEkibeQ2v"
         }
       }
     }

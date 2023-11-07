@@ -112,7 +112,7 @@ namespace Netezos.Tests.Keys
         [Fact]
         public void TestEd25519()
         {
-            foreach (var sample in DJson.Read(@"..\..\..\Keys\HDKeys\Samples\ed25519.json"))
+            foreach (var sample in DJson.Read(@"../../../Keys/HDKeys/Samples/ed25519.json"))
             {
                 var hdKey = HDKey.FromSeed(Hex.Parse((string)sample.seed))
                     .Derive((string)sample.path);
@@ -126,7 +126,7 @@ namespace Netezos.Tests.Keys
         [Fact]
         public void TestSecp256k1()
         {
-            foreach (var sample in DJson.Read(@"..\..\..\Keys\HDKeys\Samples\secp256k1.json"))
+            foreach (var sample in DJson.Read(@"../../../Keys/HDKeys/Samples/secp256k1.json"))
             {
                 var hdKey = HDKey.FromSeed(Hex.Parse((string)sample.seed), ECKind.Secp256k1)
                     .Derive((string)sample.path);
@@ -143,7 +143,7 @@ namespace Netezos.Tests.Keys
         [Fact]
         public void TestNistp256()
         {
-            foreach (var sample in DJson.Read(@"..\..\..\Keys\HDKeys\Samples\nistp256.json"))
+            foreach (var sample in DJson.Read(@"../../../Keys/HDKeys/Samples/nistp256.json"))
             {
                 var hdKey = HDKey.FromSeed(Hex.Parse((string)sample.seed), ECKind.NistP256)
                     .Derive((string)sample.path);
@@ -159,7 +159,7 @@ namespace Netezos.Tests.Keys
         [Fact]
         public void Atomex()
         {
-            foreach (var sample in DJson.Read(@"..\..\..\Keys\HDKeys\Samples\atomex.json"))
+            foreach (var sample in DJson.Read(@"../../../Keys/HDKeys/Samples/atomex.json"))
             {
                 var hdKey = HDKey.FromMnemonic(Mnemonic.Parse((string)sample.mnemonic))
                     .Derive((string)sample.path);
@@ -172,7 +172,7 @@ namespace Netezos.Tests.Keys
         [Fact]
         public void Kukai()
         {
-            foreach (var sample in DJson.Read(@"..\..\..\Keys\HDKeys\Samples\kukai.json"))
+            foreach (var sample in DJson.Read(@"../../../Keys/HDKeys/Samples/kukai.json"))
             {
                 var password = string.IsNullOrEmpty(sample.password) ? "" : sample.password;
                 var hdKey = HDKey.FromMnemonic(Mnemonic.Parse((string)sample.mnemonic), password)

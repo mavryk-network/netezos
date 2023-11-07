@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "reveal",
-      "source": "tz1iD5nmudc4QtfNW14WWaiP7JEDuUHnbXuv",
+      "source": "mv1WaZ6NDzuQzASbeKdMkQQQGK6CTrmKrDGh",
       "fee": "1257",
       "counter": "5",
       "gas_limit": "10000",
@@ -12,12 +12,12 @@
     },
     {
       "kind": "delegation",
-      "source": "tz1iD5nmudc4QtfNW14WWaiP7JEDuUHnbXuv",
+      "source": "mv1WaZ6NDzuQzASbeKdMkQQQGK6CTrmKrDGh",
       "fee": "1160",
       "counter": "6",
       "gas_limit": "10100",
       "storage_limit": "0",
-      "delegate": "tz1aWXP237BLwNHJcCD4b3DutCevhqq2T1Z9"
+      "delegate": "mv1NszgcMUUhWe4XkWmupruw3DWuGEKi2EmL"
     }
   ]
 }

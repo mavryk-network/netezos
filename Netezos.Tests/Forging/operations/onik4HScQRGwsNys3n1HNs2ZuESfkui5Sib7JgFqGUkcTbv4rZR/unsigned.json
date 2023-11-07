@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "transaction",
-      "source": "tz1SJJY253HoEda8PS5vvfHVtyghgK3CTS2z",
+      "source": "mv1PaZJhgqzNfrw4AeX63VaxHjKyWSo4sL2Q",
       "fee": "2966",
       "counter": "133558",
       "gas_limit": "26271",
@@ -31,7 +31,7 @@
                 "prim": "key_hash"
               },
               {
-                "string": "tz2L2HuhaaSnf6ShEDdhTEAr5jGPWPNwpvcB"
+                "string": "mv2LH9ai4JLrEL7DUfwQLnXf9VVng5fWhjpW"
               }
             ]
           },
@@ -42,7 +42,7 @@
             "prim": "PUSH",
             "args": [
               {
-                "prim": "mutez"
+                "prim": "mumav"
               },
               {
                 "int": "2"

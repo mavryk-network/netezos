@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "origination",
-      "source": "tz1RzJmn8Dh5WMKno12NzoqeCXTRjt9V1Tyd",
+      "source": "mv1NXDyPApA8bn2EFyPqqZKgNQjX5Fy9ndgp",
       "fee": "100000",
       "counter": "375862",
       "gas_limit": "100000",
@@ -63,7 +63,7 @@
                             ]
                           },
                           {
-                            "prim": "mutez",
+                            "prim": "mumav",
                             "annots": [
                               "%minAmount"
                             ]
@@ -85,7 +85,7 @@
                         "prim": "address"
                       },
                       {
-                        "prim": "mutez"
+                        "prim": "mumav"
                       }
                     ],
                     "annots": [
@@ -698,7 +698,7 @@
                   ]
                 },
                 {
-                  "string": "tz1P1n8LvweoarK3DTPSnAHtiGVRujhvR2vk"
+                  "string": "mv1KiQsJJc2JR73GGVLjsqmVrRKhBaARSHYc"
                 }
               ]
             },

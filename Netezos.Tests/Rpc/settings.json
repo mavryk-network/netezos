@@ -2,8 +2,8 @@
   "node": "https://rpc.tzkt.io/mainnet/",
   "testContract": "KT1WPEis2WhAc2FciM2tZVn8qe6pCBe9HkDp",
   "testEntrypoint": "Action",
-  "testDelegate": "tz3bvNMQ95vfAYtG8193ymshqjSvmxiCUuR5",
-  "testInactive": "tz1bR8MFMyWSa428KRQcdShZFu9C4gEA4iFd",
+  "testDelegate": "mv3Mr9TnZnjJDLUtD5ZyLDLxLBFwaTdQzbvt",
+  "testInactive": "mv18EygPqzf5yVqtJ84cw2L8wsBgARyxawK3",
   "testSmartRollup": "sr1M8qwvJuzmB5fgu4JFS2gtUvC3CBGs7TQx",
   "keyHash": "exprujtiEkpbwKbqaTSdmCFqQDn7qeupsA1QijNmw2GHfVW5PexFvz",
   "bigMapId": "9563"

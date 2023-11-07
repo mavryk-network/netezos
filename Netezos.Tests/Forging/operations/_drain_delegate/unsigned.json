@@ -3,9 +3,9 @@
   "contents": [
     {
       "kind": "drain_delegate",
-      "consensus_key": "tz1fPT1LeQJboJ3jA4gwQ4r1xqbHgW1pS2jf",
-      "delegate": "tz1XfNWYxfKRskaEZxytFJ3WXagcb7XJ6g76",
-      "destination": "tz1foxFdz2ieSj8P9YxKYBTEqYbgFXXEeiQY"
+      "consensus_key": "mv186kaJWSPRBQLZV14HgNbgD62rQFXTEGN3",
+      "delegate": "mv1N2bsjPstgtMSfnUcstNsa5HjGbgQmQxdG",
+      "destination": "mv19DJ7Xqq9STm4hPzrxsHwFw2i9m9mKzvZC"
     }
   ]
 }

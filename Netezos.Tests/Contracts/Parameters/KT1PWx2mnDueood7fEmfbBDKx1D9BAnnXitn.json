@@ -59,8 +59,8 @@
     "human": {
       "entrypoint": "transfer",
       "value": {
-        "from": "tz1ZAwyfujwED4yUhQAtc1eqm4gW5u2Xiw77",
-        "to": "tz1d75oB6T4zUMexzkr5WscGktZ1Nss1JrT7",
+        "from": "mv1MYRHGE7EanLkhqijjqqLrv5YUeHXMo6sg",
+        "to": "mv1RUZ6mQpNM3dSC95QvkhJHuuQywGJfQRmB",
         "value": "10000"
       }
     }
@@ -71,7 +71,7 @@
       "value": {
         "prim": "Pair",
         "args": [
-          { "string": "tz1WXK2yWvAhaFdXEjsXuHenfgfDr9mqWiBw" },
+          { "string": "mv1BHVsMaaEYdGeeAakdqNq4oZ5wd7JhxkTK" },
           { "string": "KT1NhtHwHD5cqabfSdwg1Fowud5f175eShwx" }
         ]
       }
@@ -79,7 +79,7 @@
     "human": {
       "entrypoint": "getBalance",
       "value": {
-        "owner": "tz1WXK2yWvAhaFdXEjsXuHenfgfDr9mqWiBw",
+        "owner": "mv1BHVsMaaEYdGeeAakdqNq4oZ5wd7JhxkTK",
         "contract": "KT1NhtHwHD5cqabfSdwg1Fowud5f175eShwx"
       }
     }

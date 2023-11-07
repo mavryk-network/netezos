@@ -3,13 +3,13 @@
   "contents": [
     {
       "kind": "smart_rollup_refute",
-      "source": "tz1iuZF4vDiNzhtk5UidYa7q3tdJxApumw6n",
+      "source": "mv1Jn4T8NXSZBXfS6p8H4zsHuGnz173FMq6u",
       "fee": "2568",
       "counter": "28301",
       "gas_limit": "6299",
       "storage_limit": "0",
       "rollup": "sr1St8gtsTU5Tj6R8FbvRDKviz1X8A1g6ZEy",
-      "opponent": "tz1UjQQqr2xsKVSVBNm3EQdNG52ZtgnsLebU",
+      "opponent": "mv1B7kNLLeVDHDR3Dy6zGsZUUUb3ePkVCXj2",
       "refutation": {
         "refutation_kind": "move",
         "choice": "836000000000",

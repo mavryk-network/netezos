@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "transaction",
-      "source": "tz1SJJY253HoEda8PS5vvfHVtyghgK3CTS2z",
+      "source": "mv1PaZJhgqzNfrw4AeX63VaxHjKyWSo4sL2Q",
       "fee": "4905",
       "counter": "133565",
       "gas_limit": "44961",
@@ -79,7 +79,7 @@
                   "prim": "PUSH",
                   "args": [
                     {
-                      "prim": "mutez"
+                      "prim": "mumav"
                     },
                     {
                       "int": "1"

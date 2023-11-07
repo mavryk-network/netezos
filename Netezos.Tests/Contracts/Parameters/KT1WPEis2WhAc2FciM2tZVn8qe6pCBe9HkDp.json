@@ -20,7 +20,7 @@
                           {
                             "prim": "Pair",
                             "args": [
-                              { "string": "tz3bTdwZinP8U1JmSweNzVKhmwafqWmFWRfk" },
+                              { "string": "mv3MahDHVTULtbkQ9DKXungGHh2TBardNxaT" },
                               { "string": "edpkteDwHwoNPB18tKToFKeSCykvr1ExnoMV5nawTJy9Y9nLTfQ541" }
                             ]
                           }
@@ -108,7 +108,7 @@
       "value": {
         "action_input": {
           "Set_pour": {
-            "pour_dest": "tz3bTdwZinP8U1JmSweNzVKhmwafqWmFWRfk",
+            "pour_dest": "mv3MahDHVTULtbkQ9DKXungGHh2TBardNxaT",
             "pour_authorizer": "edpkteDwHwoNPB18tKToFKeSCykvr1ExnoMV5nawTJy9Y9nLTfQ541"
           }
         },

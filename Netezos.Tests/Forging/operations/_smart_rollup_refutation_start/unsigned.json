@@ -3,13 +3,13 @@
   "contents": [
     {
       "kind": "smart_rollup_refute",
-      "source": "tz1TecRhYLVV9bTKRKU9g1Hhpb1Ymw3ynzWS",
+      "source": "mv1KkBjCo17LLGhcVVv9GLGk33ojqTQRSiyW",
       "fee": "943",
       "counter": "23046",
       "gas_limit": "6109",
       "storage_limit": "0",
       "rollup": "sr1QZkk1swognQW3dmiXvga3wVkEgBq7QFjE",
-      "opponent": "tz1iFnSQ6V2d8piVMPMjtDNdkYNMaUfKwsoy",
+      "opponent": "mv1Ac54wcpB9uoseaPJAge1DyTRupJhEj8oW",
       "refutation": {
         "refutation_kind": "start",
         "player_commitment_hash": "src13G8tXdSirtPDGRuAjzc5JxxH1zHHkuBgNMFSHnybRt38UjnzTQ",

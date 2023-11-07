@@ -21,7 +21,7 @@ var blockHash = "BLghtuUq4Q578fA4STBWcSnVSBAtP1yQjtgLdejqAzzvtyrZanJ";
 
 var operation = new TransactionContent
 {
-    Source = "tz1NXjqkurAmpKJEF76T58oyNsy3hWK7mk8e",
+    Source = "mv1AuD9MEDU8Pb5TPRfJJxVzXtq2FtrP2kLy",
     Destination = "KT1SkmB19o8nfhRvG9LL7TjDfX2Bm1nCuYoY",
     Fee = 22100,
     Counter = 377727,
@@ -48,7 +48,7 @@ var operations = new ManagerOperationContent[]
 {
     new RevealContent
     {
-        Source = "tz1f2MeahW6XMLcfHJSU5VH8USC4EuFiwdhx",
+        Source = "mv1TPpxB1sPsvcPtRd1KKJy9dT42oHgDtx5A",
         Fee = 1257,
         Counter = 5,
         GasLimit = 10000,
@@ -57,8 +57,8 @@ var operations = new ManagerOperationContent[]
     },
     new TransactionContent
     {
-        Source = "tz1f2MeahW6XMLcfHJSU5VH8USC4EuFiwdhx",
-        Destination = "tz1f2MeahW6XMLcfHJSU5VH8USC4EuFiwdhx",
+        Source = "mv1TPpxB1sPsvcPtRd1KKJy9dT42oHgDtx5A",
+        Destination = "mv1TPpxB1sPsvcPtRd1KKJy9dT42oHgDtx5A",
         Fee = 1188,
         Counter = 6,
         GasLimit = 10307,

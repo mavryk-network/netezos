@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "origination",
-      "source": "tz1Kz6VSEPNnKPiNvhyio6E1otbSdDhVD9qB",
+      "source": "mv1P55HU7gnnWG3U91TfL1TWvFLf69ddqawF",
       "fee": "100000",
       "counter": "134",
       "gas_limit": "100000",
@@ -57,7 +57,7 @@
                         "prim": "address"
                       },
                       {
-                        "prim": "mutez"
+                        "prim": "mumav"
                       }
                     ]
                   },
@@ -74,7 +74,7 @@
                             ]
                           },
                           {
-                            "prim": "mutez",
+                            "prim": "mumav",
                             "annots": [
                               "%minAmount"
                             ]
@@ -564,7 +564,7 @@
                               "prim": "PUSH",
                               "args": [
                                 {
-                                  "prim": "mutez"
+                                  "prim": "mumav"
                                 },
                                 {
                                   "int": "0"
@@ -744,7 +744,7 @@
                                   "prim": "option",
                                   "args": [
                                     {
-                                      "prim": "mutez"
+                                      "prim": "mumav"
                                     }
                                   ]
                                 },
@@ -919,7 +919,7 @@
                         "prim": "PUSH",
                         "args": [
                           {
-                            "prim": "mutez"
+                            "prim": "mumav"
                           },
                           {
                             "int": "0"
@@ -1039,7 +1039,7 @@
                   ]
                 },
                 {
-                  "string": "tz1Kz6VSEPNnKPiNvhyio6E1otbSdDhVD9qB"
+                  "string": "mv1P55HU7gnnWG3U91TfL1TWvFLf69ddqawF"
                 }
               ]
             }

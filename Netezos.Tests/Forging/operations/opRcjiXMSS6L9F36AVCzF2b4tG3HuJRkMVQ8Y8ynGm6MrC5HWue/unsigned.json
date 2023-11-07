@@ -3,7 +3,7 @@
   "contents": [
     {
       "kind": "origination",
-      "source": "tz1TJCwoX79reCZ8yccPeW8iB9Mba91v8H47",
+      "source": "mv1FfgFPqUTDDULN7wBEtKpjLADa8XXnWu3W",
       "fee": "2136",
       "counter": "307030",
       "gas_limit": "16434",
@@ -197,7 +197,7 @@
                         "prim": "PUSH",
                         "args": [
                           {
-                            "prim": "mutez"
+                            "prim": "mumav"
                           },
                           {
                             "int": "1000000"
