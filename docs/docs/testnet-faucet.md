@@ -22,4 +22,4 @@ var address = key.Address; // tz1SauKgPRsTSuQRWzJA262QR8cKdw1d9pyK
 ```
 
 Let's go to the [Faucet Bot](https://t.me/tezos_faucet_bot) and get some test coins.
-Click on `🤑 Get coins` to receive 100&nbsp;ꜩ to the specified tz-address, or `🍬 Get tokens` to receive some test tokens, or `➕ Add subscription` and set `Amount` to ensure your balance is always non-zero.
+Click on `🤑 Get coins` to receive 100&nbsp;ꜩ to the specified mv-address, or `🍬 Get tokens` to receive some test tokens, or `➕ Add subscription` and set `Amount` to ensure your balance is always non-zero.

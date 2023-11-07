@@ -6,7 +6,7 @@ namespace Netezos.Contracts
 {
     public sealed class MutezSchema : Schema, IFlat
     {
-        public override PrimType Prim => PrimType.mutez;
+        public override PrimType Prim => PrimType.mumav;
 
         public MutezSchema(MichelinePrim micheline) : base(micheline) { }
 

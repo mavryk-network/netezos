@@ -37,13 +37,13 @@ namespace Netezos.Contracts
                 if (micheBytes.Value[0] == 0)
                 {
                     if (micheBytes.Value[1] == 0)
-                        prefix = Prefix.tz1;
+                        prefix = Prefix.mv1;
                     else if (micheBytes.Value[1] == 1)
-                        prefix = Prefix.tz2;
+                        prefix = Prefix.mv2;
                     else if (micheBytes.Value[1] == 2)
-                        prefix = Prefix.tz3;
+                        prefix = Prefix.mv3;
                     else if (micheBytes.Value[1] == 3)
-                        prefix = Prefix.tz4;
+                        prefix = Prefix.mv4;
                     else
                         return Hex.Convert(micheBytes.Value);
                 }
@@ -136,22 +136,22 @@ namespace Netezos.Contracts
 
             switch (address.Substring(0, 3))
             {
-                case "tz1":
+                case "mv1":
                     addressBytes.CopyTo(res, 2);
                     res[0] = 0;
                     res[1] = 0;
                     break;
-                case "tz2":
+                case "mv2":
                     addressBytes.CopyTo(res, 2);
                     res[0] = 0;
                     res[1] = 1;
                     break;
-                case "tz3":
+                case "mv3":
                     addressBytes.CopyTo(res, 2);
                     res[0] = 0;
                     res[1] = 2;
                     break;
-                case "tz4":
+                case "mv4":
                     addressBytes.CopyTo(res, 2);
                     res[0] = 0;
                     res[1] = 3;

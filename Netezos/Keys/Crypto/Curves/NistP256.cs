@@ -15,7 +15,7 @@ namespace Netezos.Keys
         
         public override ECKind Kind => ECKind.NistP256;
 
-        public override byte[] AddressPrefix => Prefix.tz3;
+        public override byte[] AddressPrefix => Prefix.mv3;
         public override byte[] PublicKeyPrefix => Prefix.p2pk;
         public override byte[] PrivateKeyPrefix => Prefix.p2sk;
         public override byte[] SignaturePrefix => Prefix.p2sig;

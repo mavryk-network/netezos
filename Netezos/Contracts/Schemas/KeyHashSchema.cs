@@ -27,10 +27,10 @@ namespace Netezos.Contracts
 
                 var prefix = micheBytes.Value[0] switch
                 {
-                    0 => Prefix.tz1,
-                    1 => Prefix.tz2,
-                    2 => Prefix.tz3,
-                    3 => Prefix.tz4,
+                    0 => Prefix.mv1,
+                    1 => Prefix.mv2,
+                    2 => Prefix.mv3,
+                    3 => Prefix.mv4,
                     _ => null
                 };
 
@@ -66,10 +66,10 @@ namespace Netezos.Contracts
 
                 res[0] = micheStr.Value.Substring(0, 3) switch
                 {
-                    "tz1" => 0,
-                    "tz2" => 1,
-                    "tz3" => 2,
-                    "tz4" => 3,
+                    "mv1" => 0,
+                    "mv2" => 1,
+                    "mv3" => 2,
+                    "mv4" => 3,
                     _ => throw FormatException(value)
                 };
 

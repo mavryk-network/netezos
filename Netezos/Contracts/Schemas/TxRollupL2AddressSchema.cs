@@ -25,7 +25,7 @@ namespace Netezos.Contracts
                 if (micheBytes.Value.Length != 20)
                     return Hex.Convert(micheBytes.Value);
 
-                return Base58.Convert(micheBytes.Value, Prefix.tz4);
+                return Base58.Convert(micheBytes.Value, Prefix.mv4);
             }
             else
             {

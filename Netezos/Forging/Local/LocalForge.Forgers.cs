@@ -65,10 +65,10 @@ namespace Netezos.Forging
 
             return prefix switch
             {
-                "tz1" => new byte[] { 0, 0 }.Concat(res),
-                "tz2" => new byte[] { 0, 1 }.Concat(res),
-                "tz3" => new byte[] { 0, 2 }.Concat(res),
-                "tz4" => new byte[] { 0, 3 }.Concat(res),
+                "mv1" => new byte[] { 0, 0 }.Concat(res),
+                "mv2" => new byte[] { 0, 1 }.Concat(res),
+                "mv3" => new byte[] { 0, 2 }.Concat(res),
+                "mv4" => new byte[] { 0, 3 }.Concat(res),
                 "KT1" => new byte[] { 1 }.Concat(res).Concat(new byte[] { 0 }),
                 "txr" when value.StartsWith("txr1") => new byte[] { 2 }.Concat(res).Concat(new byte[] { 0 }),
                 "sr1" => new byte[] { 3 }.Concat(res).Concat(new byte[] { 0 }),
@@ -93,10 +93,10 @@ namespace Netezos.Forging
 
             return prefix switch
             {
-                "tz1" => new byte[] { 0 }.Concat(res),
-                "tz2" => new byte[] { 1 }.Concat(res),
-                "tz3" => new byte[] { 2 }.Concat(res),
-                "tz4" => new byte[] { 3 }.Concat(res),
+                "mv1" => new byte[] { 0 }.Concat(res),
+                "mv2" => new byte[] { 1 }.Concat(res),
+                "mv3" => new byte[] { 2 }.Concat(res),
+                "mv4" => new byte[] { 3 }.Concat(res),
                 _ => throw new ArgumentException($"Invalid source prefix {prefix}")
             };
         }

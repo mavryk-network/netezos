@@ -4,7 +4,7 @@
     {
         public override ECKind Kind => ECKind.Bls12381;
 
-        public override byte[] AddressPrefix => Prefix.tz4;
+        public override byte[] AddressPrefix => Prefix.mv4;
         public override byte[] PublicKeyPrefix => Prefix.BLpk;
         public override byte[] PrivateKeyPrefix => Prefix.BLsk;
         public override byte[] SignaturePrefix => Prefix.BLsig;

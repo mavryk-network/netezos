@@ -42,7 +42,7 @@ namespace Netezos
         /// <summary>
         /// ed25519 public key hash
         /// </summary>
-        public static class tz1
+        public static class mv1
         {
             public const int Encoded = 36;
             public const int Decoded = 20;

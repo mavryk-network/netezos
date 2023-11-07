@@ -175,10 +175,10 @@ namespace Netezos.Forging
         {
             var prefix = ReadByte() switch
             {
-                0 => Prefix.tz1,
-                1 => Prefix.tz2,
-                2 => Prefix.tz3,
-                3 => Prefix.tz4,
+                0 => Prefix.mv1,
+                1 => Prefix.mv2,
+                2 => Prefix.mv3,
+                3 => Prefix.mv4,
                 var type => throw new ArgumentException($"Invalid source prefix {type}")
             };
             return ReadBase58(20, prefix);
@@ -358,7 +358,7 @@ namespace Netezos.Forging
 
         public string ReadTz1Address()
         {
-            return ReadBase58(Lengths.tz1.Decoded, Prefix.tz1);
+            return ReadBase58(Lengths.mv1.Decoded, Prefix.mv1);
         }
 
         public T ReadEnumerableSingle<T>(Func<ForgedReader, T> readData)

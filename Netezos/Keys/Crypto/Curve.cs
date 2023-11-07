@@ -32,10 +32,10 @@
 
         public static Curve FromPrefix(string prefix) => prefix switch
         {
-            "edpk" or "edsk" or "tz1" or "edesk" or "edsig" => new Ed25519(),
-            "sppk" or "spsk" or "tz2" or "spesk" or "spsig" => new Secp256k1(),
-            "p2pk" or "p2sk" or "tz3" or "p2esk" or "p2sig" => new NistP256(),
-            "BLpk" or "BLsk" or "tz4" or "BLesk" or "BLsig" => new Bls12381(),
+            "edpk" or "edsk" or "mv1" or "edesk" or "edsig" => new Ed25519(),
+            "sppk" or "spsk" or "mv2" or "spesk" or "spsig" => new Secp256k1(),
+            "p2pk" or "p2sk" or "mv3" or "p2esk" or "p2sig" => new NistP256(),
+            "BLpk" or "BLsk" or "mv4" or "BLesk" or "BLsig" => new Bls12381(),
             _ => throw new ArgumentException("Invalid prefix"),
         };
 

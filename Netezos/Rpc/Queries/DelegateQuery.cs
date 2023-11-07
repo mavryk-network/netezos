@@ -65,7 +65,7 @@
         public RpcObject FrozenBalanceByCycle => new(this, "frozen_balance_by_cycle/");
 
         /// <summary>
-        /// Returns the initial amount (that is, at the beginning of a cycle) of the frozen deposits (in mutez). This amount is the same as the current amount of the frozen deposits, unless the delegate has been punished.
+        /// Returns the initial amount (that is, at the beginning of a cycle) of the frozen deposits (in mumav). This amount is the same as the current amount of the frozen deposits, unless the delegate has been punished.
         /// </summary>
         public RpcObject FrozenDeposits => new(this, "frozen_deposits/");
 

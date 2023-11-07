@@ -13,7 +13,7 @@ namespace Netezos.Keys
         
         public override ECKind Kind => ECKind.Ed25519;
 
-        public override byte[] AddressPrefix => Prefix.tz1;
+        public override byte[] AddressPrefix => Prefix.mv1;
         public override byte[] PublicKeyPrefix => Prefix.edpk;
         public override byte[] PrivateKeyPrefix => Prefix.edsk;
         public override byte[] SignaturePrefix => Prefix.edsig;

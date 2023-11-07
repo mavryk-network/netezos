@@ -27,7 +27,7 @@ namespace Netezos.Contracts
             PrimType.lambda => new LambdaSchema(micheline),
             PrimType.list => new ListSchema(micheline),
             PrimType.map => new MapSchema(micheline),
-            PrimType.mutez => new MutezSchema(micheline),
+            PrimType.mumav => new MutezSchema(micheline),
             PrimType.nat => new NatSchema(micheline),
             PrimType.never => new NeverSchema(micheline),
             PrimType.operation=> new OperationSchema(micheline),
