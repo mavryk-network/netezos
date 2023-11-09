@@ -1,12 +1,12 @@
 ---
-title: Tezos Forging & Unforging
-description: Short guide on how to forge and unforge Tezos operations using Netezos, Tezos SDK for .NET developers.
+title: Mavryk Forging & Unforging
+description: Short guide on how to forge and unforge Mavryk operations using Netmavryk, Mavryk SDK for .NET developers.
 keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, forging, unforging
 ---
 
-# Tezos Forging & Unforging
+# Mavryk Forging & Unforging
 
-Netezos supports functions to convert Tezos operations and their associated data into binary form for injection into the Tezos blockchain&mdash;a process known as **forging**. The reverse is also possible; converting binary forms of injected operations into native types&mdash;a process known as **unforging**.
+Netmavryk supports functions to convert Mavryk operations and their associated data into binary form for injection into the Mavryk blockchain&mdash;a process known as **forging**. The reverse is also possible; converting binary forms of injected operations into native types&mdash;a process known as **unforging**.
 
 ## Forging
 
@@ -92,7 +92,7 @@ Since the number of operations from forged bytes cannot be known until the unfor
 
 ## Operation types
 
-Following is a chart of Tezos operations and their operation native type counterparts.
+Following is a chart of Mavryk operations and their operation native type counterparts.
 
 |         Operation           |            Type            |
 | :-------------------------: | :------------------------: |

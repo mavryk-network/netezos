@@ -5,7 +5,7 @@ keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain,
 ---
 
 # Wallet Import and HD Keys Interaction
-With Netezos.Keys you can create or import a Hierarchical Deterministic (HD) wallet.
+With Netmavryk.Keys you can create or import a Hierarchical Deterministic (HD) wallet.
 
 ## Basic usage
 
@@ -15,7 +15,7 @@ In order to create an HD wallet, you just need to create a new instance of `HDKe
 var masterKey = new HDKey(ECKind.Ed25519); //Ed25519, Secp256k1, and NistP256 are available
 ```
 
-To get a child key, for instance, with the path `"m/44'/1729'/0'/0'"` (it's a default path for Atomex, Temple, Kukai and other Tezos wallets), we need to `Derive` it from the master key
+To get a child key, for instance, with the path `"m/44'/1729'/0'/0'"` (it's a default path for Atomex, Temple, Kukai and other Mavryk wallets), we need to `Derive` it from the master key
 
 ```cs
 var childHdKey = masterKey.Derive("m/44'/1729'/0'/0'");

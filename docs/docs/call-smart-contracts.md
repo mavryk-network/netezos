@@ -1,25 +1,25 @@
 ---
-title: Tezos smart contracts interaction
-description: Short guide on how to interact with Tezos smart contracts using Netezos, Tezos SDK for .NET developers.
+title: Mavryk smart contracts interaction
+description: Short guide on how to interact with Mavryk smart contracts using Netmavryk, Mavryk SDK for .NET developers.
 keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
 ---
 
-# Tezos smart contracts interaction
+# Mavryk smart contracts interaction
 
-[Netezos.Contracts](../api/Netezos.Contracts.html) allows to interact with Tezos Smart contracts, build parameters and contract calls.
-A full working code snippet of calling FA1.2 and FA2 transfers with Netezos SDK can be found at [.NET Fiddle](https://dotnetfiddle.net/vLf3nB).
+[Netmavryk.Contracts](../api/Netmavryk.Contracts.html) allows to interact with Mavryk Smart contracts, build parameters and contract calls.
+A full working code snippet of calling FA1.2 and FA2 transfers with Netmavryk SDK can be found at [.NET Fiddle](https://dotnetfiddle.net/vLf3nB).
 
 ## Prerequisites
 
 First, we need an `Rpc` to interaction. You can find a more detailed description of working with the `Rpc` 
-in the [Tezos Rpc](tezos-rpc.html) section. In our case we use the RPC with the `ghostnet` network.
+in the [Mavryk Rpc](tezos-rpc.html) section. In our case we use the RPC with the `ghostnet` network.
 
 ```cs
 var rpc = new TezosRpc("https://rpc.tzkt.io/ghostnet/");
 ```
 
 Also, we need a wallet to call contracts. You can find a more detailed description of working with the `Key` in the [Get started](get-started.html) section. 
-You can use the address to get some test tokens with the [Tezos Faucet Bot](https://t.me/tezos_faucet_bot) or even generate a new key.
+You can use the address to get some test tokens with the [Mavryk Faucet Bot](https://t.me/tezos_faucet_bot) or even generate a new key.
 
 ```cs
 var key = Key.FromBase58("edsk35mfZXZJiYUxqcmsK5K6ggg3owD2dpbRgFHp4zZzmrPy9RBdj8");

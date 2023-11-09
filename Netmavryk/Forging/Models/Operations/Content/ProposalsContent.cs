@@ -1,0 +1,19 @@
+﻿using System.Text.Json.Serialization;
+
+namespace Netmavryk.Forging.Models
+{
+    public class ProposalsContent : OperationContent
+    {
+        [JsonPropertyName("kind")]
+        public override string Kind => "proposals";
+        
+        [JsonPropertyName("source")]
+        public string Source { get; set; } = null!;
+
+        [JsonPropertyName("period")]
+        public int Period { get; set; }
+
+        [JsonPropertyName("proposals")]
+        public List<string> Proposals { get; set; } = null!;
+    }
+}

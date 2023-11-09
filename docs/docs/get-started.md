@@ -1,6 +1,6 @@
 ---
 title: Get started
-description: Short guide on how to get started with Netezos, Tezos SDK for .NET developers.
+description: Short guide on how to get started with Netmavryk, Mavryk SDK for .NET developers.
 keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk,
 ---
 
@@ -10,7 +10,7 @@ Let's consider the most common use case - sending a transaction.
 
 ## Installation
 
-`PM> Install-Package Netezos`
+`PM> Install-Package Netmavryk`
 
 ## Create private key
 
@@ -42,7 +42,7 @@ var counter = await rpc.Blocks.Head.Context.Contracts[address].Counter.GetAsync<
 Since our address has just been created, we need to reveal its public key before sending any operation, so that everyone can validate our signatures.
 Therefore, we need to send actually two operations: a reveal and then a transaction.
 
-Netezos allows you to pack multiple operations into a group and forge/send it as a single batch.
+Netmavryk allows you to pack multiple operations into a group and forge/send it as a single batch.
 
 ````cs
 var content = new ManagerOperationContent[]
@@ -79,4 +79,4 @@ byte[] signature = key.SignOperation(bytes);
 var result = await rpc.Inject.Operation.PostAsync(bytes.Concat(signature));
 ````
 
-That is it. We have successfully injected our first operation into the Tezos blockchain.
+That is it. We have successfully injected our first operation into the Mavryk blockchain.

@@ -6,7 +6,7 @@
           "files": [
             "*.csproj"
           ],
-          "src": "../Netezos/"
+          "src": "../Netmavryk/"
         }
       ],
       "dest": "api",
@@ -59,7 +59,7 @@
       }
     ],
     "globalMetadata": {
-      "_appTitle": "Netezos",
+      "_appTitle": "Netmavryk",
       "_appFooter": "Copyright © Baking Bad",
       "_appLogoPath": "logo.svg",
       "_enableNewTab": true,

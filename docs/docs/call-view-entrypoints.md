@@ -1,6 +1,6 @@
 ---
 title: Get data from view entrypoints
-description: Short guide on how to get data from Tezos smart contracts via "view" entrypoints using Netezos, Tezos SDK for .NET developers.
+description: Short guide on how to get data from Mavryk smart contracts via "view" entrypoints using Netmavryk, Mavryk SDK for .NET developers.
 keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
 ---
  
@@ -8,7 +8,7 @@ keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain,
  
 Often we need to access smart contract storage, to get specific data like token balance for a specific account, or total supply of some token, etc. 
  
-In Tezos there are two ways to get data from a smart contract:
+In Mavryk there are two ways to get data from a smart contract:
 - get the whole storage and try to find there raw data;
 - use "view" entrypoints to get processed data.
  
@@ -17,10 +17,10 @@ Let's see how to work with "view" entrypoints (from the outside).
 ## View entrypoints
  
 A `view` is an entrypoint that represents a computation that does not modify smart contract's state, but returns some result.
-In Tezos `view` entrypoints are actually the same entrypoints (technically), but following some conventions. 
+In Mavryk `view` entrypoints are actually the same entrypoints (technically), but following some conventions. 
 See more details [here](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-4/tzip-4.md#view-entrypoints).
  
-In contrast with `view` functions in Ethereum, which are very easy to use, `view` entrypoints in Tezos are much more complicated, because they do not return
+In contrast with `view` functions in Ethereum, which are very easy to use, `view` entrypoints in Mavryk are much more complicated, because they do not return
 a value directly, but pass it to the callback contract.
  
 ## Callback contracts
@@ -76,11 +76,11 @@ Note, by appending `%viewNat` to the contract address we can specify a particula
 So, we called `view` entrypoint by sending a transaction to a smart contract, then the smart contract produced
 an internal transaction to the `callback` contract with a result value in the parameters.
  
-## Call view entrypoints with Netezos
+## Call view entrypoints with Netmavryk
  
-We've just seen how `view` entrypoints work in Tezos: you send a transaction to the smart contract, then the smart contract produces
+We've just seen how `view` entrypoints work in Mavryk: you send a transaction to the smart contract, then the smart contract produces
 an internal transaction with result value in its parameters and sends it to the `callback` contract. 
-With Netezos we will do basically the same things.
+With Netmavryk we will do basically the same things.
 
 Let's see, how to get [FA1.2 token](https://ghostnet.tzkt.io/KT1EwXFWoG9bYebmF4pYw72aGjwEnBWefgW5/code)
 balance by calling `getBalance` entrypoint.

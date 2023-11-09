@@ -1,13 +1,13 @@
 ---
-title: Tezos RPC
-description: Short guide on how to interact with Tezos nodes via RPC using Netezos, Tezos SDK for .NET developers.
+title: Mavryk RPC
+description: Short guide on how to interact with Mavryk nodes via RPC using Netmavryk, Mavryk SDK for .NET developers.
 keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk,
 ---
 
-# Tezos RPC
+# Mavryk RPC
 
-[Netezos.Rpc](../api/Netezos.Rpc.html) provides an access to the Tezos node via RPC API.
-There is the main class [TezosRpc](../api/Netezos.Rpc.TezosRpc.html) which you need to build queries, supported by the Tezos RPC API.
+[Netmavryk.Rpc](../api/Netmavryk.Rpc.html) provides an access to the Mavryk node via RPC API.
+There is the main class [TezosRpc](../api/Netmavryk.Rpc.TezosRpc.html) which you need to build queries, supported by the Mavryk RPC API.
 
 ## Basic usage
 
