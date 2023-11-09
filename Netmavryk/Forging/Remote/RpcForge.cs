@@ -6,9 +6,9 @@ namespace Netmavryk.Forging
 {
     public class RpcForge : IForge
     {
-        readonly TezosRpc Rpc;
+        readonly MavrykRpc Rpc;
         
-        public RpcForge(TezosRpc rpc) => Rpc = rpc;
+        public RpcForge(MavrykRpc rpc) => Rpc = rpc;
 
         public Task<byte[]> ForgeOperationAsync(OperationContent content)
             => ForgeAsync(new List<object> { content });

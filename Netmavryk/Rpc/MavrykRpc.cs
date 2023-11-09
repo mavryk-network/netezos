@@ -5,7 +5,7 @@ namespace Netmavryk.Rpc
     /// <summary>
     /// Rpc queries builder
     /// </summary>
-    public class TezosRpc : IDisposable
+    public class MavrykRpc : IDisposable
     {
         /// <summary>
         /// Gets the query to the blocks
@@ -21,13 +21,13 @@ namespace Netmavryk.Rpc
         RpcClient Client { get; }
 
         /// <summary>
-        /// Creates the instance of TezosRpc
+        /// Creates the instance of MavrykRpc
         /// </summary>
         /// <param name="uri">Base URI of the node</param>
         /// <param name="chain">Chain to work with.
         /// Note: this is not a network (mainnet or testnet), but a chain of the particular network.
         /// In 99.99% cases you likely want to use Chain.Main, because Chain.Test is only relevant during the testing phase of the Mavryk voting process.</param>
-        public TezosRpc(string uri, Chain chain = Rpc.Chain.Main)
+        public MavrykRpc(string uri, Chain chain = Rpc.Chain.Main)
         {
             Client = new RpcClient(uri);
             Chain = chain.ToString().ToLower();
@@ -37,14 +37,14 @@ namespace Netmavryk.Rpc
         }
 
         /// <summary>
-        /// Creates the instance of TezosRpc
+        /// Creates the instance of MavrykRpc
         /// </summary>
         /// <param name="uri">Base URI of the node</param>
         /// <param name="timeout">Timeout in seconds for the requests</param>
         /// <param name="chain">Chain to work with.
         /// Note: this is not a network (mainnet or testnet), but a chain of the network.
         /// In 99.99% cases you likely want to use Chain.Main, because Chain.Test is only relevant during the testing phase of the Mavryk voting process.</param>
-        public TezosRpc(string uri, int timeout, Chain chain = Rpc.Chain.Main)
+        public MavrykRpc(string uri, int timeout, Chain chain = Rpc.Chain.Main)
         {
             Client = new RpcClient(uri, timeout);
             Chain = chain.ToString().ToLower();
@@ -54,13 +54,13 @@ namespace Netmavryk.Rpc
         }
 
         /// <summary>
-        /// Creates the instance of TezosRpc
+        /// Creates the instance of MavrykRpc
         /// </summary>
         /// <param name="client">HttpClient instance that will be used for sending RPC requests.</param>
         /// <param name="chain">Chain to work with.
         /// Note: this is not a network (mainnet or testnet), but a chain of the network.
         /// In 99.99% cases you likely want to use Chain.Main, because Chain.Test is only relevant during the testing phase of the Mavryk voting process.</param>
-        public TezosRpc(HttpClient client, Chain chain = Rpc.Chain.Main)
+        public MavrykRpc(HttpClient client, Chain chain = Rpc.Chain.Main)
         {
             Client = new RpcClient(client);
             Chain = chain.ToString().ToLower();
@@ -85,7 +85,7 @@ namespace Netmavryk.Rpc
         public Task<T?> GetAsync<T>(string query) => Client.GetJson<T>(query);
 
         /// <summary>
-        /// Releases the unmanaged resources and disposes of the managed resources used by the <c>TezosRpc</c>
+        /// Releases the unmanaged resources and disposes of the managed resources used by the <c>MavrykRpc</c>
         /// </summary>
         public void Dispose() => Client?.Dispose();
     }

@@ -11,9 +11,9 @@ using PubKey = Netmavryk.Keys.PubKey;
 
 namespace Netmavryk.Ledger
 {
-    public class TezosLedgerClient : LedgerClientBase
+    public class MavrykLedgerClient : LedgerClientBase
     {
-        readonly byte TezosWalletCLA = 0x80;
+        readonly byte MavrykWalletCLA = 0x80;
         readonly byte[] KeyPath;
         
         enum Instruction { // taken from https://github.com/obsidiansystems/ledger-app-tezos/blob/master/APDUs.md
@@ -24,7 +24,7 @@ namespace Netmavryk.Ledger
             InsSignUnsafe = 0x05
         }
 
-        public TezosLedgerClient(ILedgerTransport transport, KeyPath keyPath) : base(transport)
+        public MavrykLedgerClient(ILedgerTransport transport, KeyPath keyPath) : base(transport)
         {
             KeyPath = keyPath == null
                 ? Utils.Serialize(new KeyPath("44'/1729'/0'/0'"))
@@ -34,7 +34,7 @@ namespace Netmavryk.Ledger
         public async Task<PubKey> GetPublicKeyAsync(ECKind curve = ECKind.Ed25519, bool display = false, CancellationToken cancellation = default)
         {
             var response = await ExchangeSingleAPDUAsync(
-                    TezosWalletCLA,
+                    MavrykWalletCLA,
                     (byte) Instruction.InsGetPublicKey,
                     (byte) (display ? 1 : 0),
                     (byte) (curve - 1) , KeyPath, OK, cancellation)
@@ -59,7 +59,7 @@ namespace Netmavryk.Ledger
                         : 0x01;
 
                 response = await ExchangeSingleAPDUAsync(
-                    TezosWalletCLA,
+                    MavrykWalletCLA,
                     (byte) Instruction.InsSign,
                     (byte) code,
                     (byte) (curve - 1), value, OK, cancellation).ConfigureAwait(false);
@@ -69,10 +69,10 @@ namespace Netmavryk.Ledger
         }
 
         #region static
-        public static async Task<IEnumerable<TezosLedgerClient>> GetHIDLedgersAsync(KeyPath keyPath = null)
+        public static async Task<IEnumerable<MavrykLedgerClient>> GetHIDLedgersAsync(KeyPath keyPath = null)
         {
             return (await HIDLedgerTransport.GetHIDTransportsAsync())
-                .Select(t => new TezosLedgerClient(t, keyPath));
+                .Select(t => new MavrykLedgerClient(t, keyPath));
         }
         #endregion
     }

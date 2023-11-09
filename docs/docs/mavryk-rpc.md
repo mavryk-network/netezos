@@ -7,14 +7,14 @@ keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain,
 # Mavryk RPC
 
 [Netmavryk.Rpc](../api/Netmavryk.Rpc.html) provides an access to the Mavryk node via RPC API.
-There is the main class [TezosRpc](../api/Netmavryk.Rpc.TezosRpc.html) which you need to build queries, supported by the Mavryk RPC API.
+There is the main class [MavrykRpc](../api/Netmavryk.Rpc.MavrykRpc.html) which you need to build queries, supported by the Mavryk RPC API.
 
 ## Basic usage
 
-Let's create an instance of the `TezosRpc` class, build a simple query and execute it by calling `GetAsync()` method.
+Let's create an instance of the `MavrykRpc` class, build a simple query and execute it by calling `GetAsync()` method.
 
 ```cs
-using (var rpc = new TezosRpc("https://mainnet-tezos.giganode.io/"))
+using (var rpc = new MavrykRpc("https://mainnet-tezos.giganode.io/"))
 {
     // get the head block
     var head = await rpc.Blocks.Head.GetAsync();

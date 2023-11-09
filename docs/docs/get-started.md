@@ -28,7 +28,7 @@ var address = key.PubKey.Address; // tz1SauKgPRsTSuQRWzJA262QR8cKdw1d9pyK
 ## Get some data from RPC
 
 ````cs
-using var rpc = new TezosRpc("https://mainnet-tezos.giganode.io/");
+using var rpc = new MavrykRpc("https://mainnet-tezos.giganode.io/");
 
 // get a head block
 var head = await rpc.Blocks.Head.Hash.GetAsync<string>();

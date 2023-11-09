@@ -7,7 +7,7 @@ namespace Netmavryk.Tests.Rpc
 {
     public class TestVotesQueries : IClassFixture<SettingsFixture>
     {
-        readonly TezosRpc Rpc;
+        readonly MavrykRpc Rpc;
 
         public TestVotesQueries(SettingsFixture settings)
         {

@@ -8,7 +8,7 @@ namespace Netmavryk.Tests.Rpc
     {
         static readonly object Crit = new();
 
-        public TezosRpc Rpc { get; }
+        public MavrykRpc Rpc { get; }
         public string TestContract { get; }
         public string TestEntrypoint { get; }
         public string TestDelegate { get; }
@@ -23,7 +23,7 @@ namespace Netmavryk.Tests.Rpc
             {
                 var settings = DJson.Read("../../../Rpc/settings.json");
 
-                Rpc = new TezosRpc(settings.node, 60);
+                Rpc = new MavrykRpc(settings.node, 60);
                 TestContract = settings.TestContract;
                 TestEntrypoint = settings.TestEntrypoint;
                 TestDelegate = settings.TestDelegate;

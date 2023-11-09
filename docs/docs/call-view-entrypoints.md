@@ -126,7 +126,7 @@ var sender   = "tz1ioz62kDw6Gm5HApeQtc1PGmN2wPBtJKUP";
 var fa12     = "KT1EwXFWoG9bYebmF4pYw72aGjwEnBWefgW5";
 var callback = "KT1MdfSC8xwRvxmd1UHANt158YtoFn4XUhn1%viewNat";
             
-var rpc = new TezosRpc("https://rpc.tzkt.io/ghostnet/");
+var rpc = new MavrykRpc("https://rpc.tzkt.io/ghostnet/");
 var counter = await rpc.Blocks.Head.Context.Contracts[sender].Counter.GetAsync<int>();
  
 var tx = new TransactionContent

@@ -15,7 +15,7 @@ First, we need an `Rpc` to interaction. You can find a more detailed description
 in the [Mavryk Rpc](tezos-rpc.html) section. In our case we use the RPC with the `ghostnet` network.
 
 ```cs
-var rpc = new TezosRpc("https://rpc.tzkt.io/ghostnet/");
+var rpc = new MavrykRpc("https://rpc.tzkt.io/ghostnet/");
 ```
 
 Also, we need a wallet to call contracts. You can find a more detailed description of working with the `Key` in the [Get started](get-started.html) section. 

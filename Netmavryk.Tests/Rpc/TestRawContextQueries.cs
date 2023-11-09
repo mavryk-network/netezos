@@ -7,7 +7,7 @@ namespace Netmavryk.Tests.Rpc
 {
     public class TestRawContextQueries : IClassFixture<SettingsFixture>
     {
-        readonly TezosRpc Rpc;
+        readonly MavrykRpc Rpc;
         readonly string TestContract;
         readonly string TestDelegate;
         readonly string TestInactive;

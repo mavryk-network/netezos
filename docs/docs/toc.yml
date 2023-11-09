@@ -8,10 +8,10 @@
   href: testnet-faucet.md 
 
 - name: Mavryk RPC
-  href: tezos-rpc.md
+  href: mavryk-rpc.md
 
 - name: Mavryk Forging & Unforging
-  href: tezos-forging.md
+  href: mavryk-forging.md
 
 - name: Smart Contracts
   items:
