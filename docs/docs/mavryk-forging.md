@@ -1,7 +1,7 @@
 ---
 title: Mavryk Forging & Unforging
 description: Short guide on how to forge and unforge Mavryk operations using Netmavryk, Mavryk SDK for .NET developers.
-keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, forging, unforging
+keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, forging, unforging
 ---
 
 # Mavryk Forging & Unforging

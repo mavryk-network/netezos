@@ -1,7 +1,7 @@
 ---
 title: Mavryk smart contracts interaction
 description: Short guide on how to interact with Mavryk smart contracts using Netmavryk, Mavryk SDK for .NET developers.
-keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
+keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
 ---
 
 # Mavryk smart contracts interaction
@@ -23,7 +23,7 @@ You can use the address to get some test tokens with the [Mavryk Faucet Bot](htt
 
 ```cs
 var key = Key.FromBase58("edsk35mfZXZJiYUxqcmsK5K6ggg3owD2dpbRgFHp4zZzmrPy9RBdj8");
-var address = key.PubKey.Address; // tz1ioz62kDw6Gm5HApeQtc1PGmN2wPBtJKUP
+var address = key.PubKey.Address; // mv1XBTPd4bESr2rWK9DG8RhQRnE1VmdfLLBf
 ```
 
 Let's create one more random key, where we will send tokens

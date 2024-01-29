@@ -1,7 +1,7 @@
 ---
 title: Get data from view entrypoints
 description: Short guide on how to get data from Mavryk smart contracts via "view" entrypoints using Netmavryk, Mavryk SDK for .NET developers.
-keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
+keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
 ---
  
 # Get data from "view" entrypoints
@@ -33,7 +33,7 @@ If you pass a result of type `a` to a callback of type `b` you will get a runtim
  
 Let's see how it works in a real example.
  
-This is a transaction that calls `getBalance` view entrypoint with parameter `tz1io...BtJKUP` and callback contract `KT1Md...XUhn1`.
+This is a transaction that calls `getBalance` view entrypoint with parameter `mv1XB...dfLLBf` and callback contract `KT1Md...XUhn1`.
 Note, by appending `%viewNat` to the contract address we can specify a particular entrypoint of the contract that should be used as a callback.
 
 ```json
@@ -47,7 +47,7 @@ Note, by appending `%viewNat` to the contract address we can specify a particula
       "prim": "Pair",
       "args": [
         {
-          "string": "tz1ioz62kDw6Gm5HApeQtc1PGmN2wPBtJKUP"         // with some args
+          "string": "mv1XBTPd4bESr2rWK9DG8RhQRnE1VmdfLLBf"         // with some args
         },
         {
           "string": "KT1MdfSC8xwRvxmd1UHANt158YtoFn4XUhn1%viewNat" // and callback contract
@@ -122,7 +122,7 @@ By the way, [/run_operation](https://gitlab.com/tezos/tezos/-/blob/master/docs/a
 Let's create a transaction:
  
 ```cs
-var sender   = "tz1ioz62kDw6Gm5HApeQtc1PGmN2wPBtJKUP";
+var sender   = "mv1XBTPd4bESr2rWK9DG8RhQRnE1VmdfLLBf";
 var fa12     = "KT1EwXFWoG9bYebmF4pYw72aGjwEnBWefgW5";
 var callback = "KT1MdfSC8xwRvxmd1UHANt158YtoFn4XUhn1%viewNat";
             
@@ -330,7 +330,7 @@ So in the end we will get:
 [
   {
     "request":{
-      "owner":"tz1ioz62kDw6Gm5HApeQtc1PGmN2wPBtJKUP",
+      "owner":"mv1XBTPd4bESr2rWK9DG8RhQRnE1VmdfLLBf",
       "token_id":"0"
     },
     "balance":"12345678912"

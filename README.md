@@ -18,7 +18,7 @@ The following features have been implemented so far:
 | Netmavryk.Ledger| Interaction with Mavryk Ledger App | Ready to use (separate package) |
 | Netmavryk.Rpc | Mavryk RPC wrapper | Ready to use |
 
-For full documentation and API Reference, please refer to the [Netmavryk website](https://netezos.dev/)
+For full documentation and API Reference, please refer to the [Netmavryk website](https://netmavryk.mavryk.org/)
 
 ### Contribution
 
@@ -49,7 +49,7 @@ var key = new Key();
 var key = Key.FromBase58("edsk4ZkGeBwDyFVjZLL2neV5FUeWNN4NJntFNWmWyEBNbRwa2u3jh1");
 
 // use this address to receive some tez
-var address = key.PubKey.Address; // tz1SauKgPRsTSuQRWzJA262QR8cKdw1d9pyK
+var address = key.PubKey.Address; // mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf
 ````
 
 ### Get some data from RPC
@@ -87,7 +87,7 @@ var content = new ManagerOperationContent[]
         Source = address,
         Counter = ++counter,
         Amount = 1000000, // 1 tez
-        Destination = "tz1KhnTgwoRRALBX6vRHRnydDGSBFsWtcJxc",
+        Destination = "mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf",
         GasLimit = 1500,
         Fee = 1000 // 0.001 tez
     }

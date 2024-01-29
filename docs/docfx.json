@@ -69,11 +69,11 @@
     },
     "template": [
       "default",
-      "templates/netezos"
+      "templates/netmavryk"
     ],
     "markdownEngineName": "markdig",
     "sitemap": {
-      "baseUrl": "https://netezos.dev/",
+      "baseUrl": "https://netmavryk.mavryk.org/",
       "changefreq": "monthly",
       "priority": 0.5,
       "fileOptions": {

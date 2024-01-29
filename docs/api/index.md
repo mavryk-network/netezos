@@ -1,7 +1,7 @@
 ---
 title: Reference Documentation
 description: Reference documentation of Netmavryk, Mavryk SDK for .NET developers.
-keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk,
+keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk,
 ---
 
 # Reference documentation

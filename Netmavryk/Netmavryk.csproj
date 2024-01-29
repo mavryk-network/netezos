@@ -11,7 +11,7 @@
 		<PackageId>Netmavryk</PackageId>
 		<PackageTags>mavryk crypto blockchain mav rpc keys signing forging encoding ledger smart contract</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://netezos.dev</PackageProjectUrl>
+		<PackageProjectUrl>https://netmavryk.mavryk.org</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 
 		<RepositoryUrl>https://github.com/mavryk-network/netmavryk</RepositoryUrl>

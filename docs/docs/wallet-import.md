@@ -1,7 +1,7 @@
 ---
 title: Wallet Import and HD Keys Interaction
 description: Short guide on how to create or import a Hierarchical Deterministic (HD) wallet.
-keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, hierarchical deterministic, hd, kukai, atomex, temple wallet, slip-0010, bip-32
+keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, hierarchical deterministic, hd, kukai, atomex, temple wallet, slip-0010, bip-32
 ---
 
 # Wallet Import and HD Keys Interaction

@@ -1,7 +1,7 @@
 ---
 title: Get started
 description: Short guide on how to get started with Netmavryk, Mavryk SDK for .NET developers.
-keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk,
+keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk,
 ---
 
 # Get started
@@ -22,7 +22,7 @@ var key = new Key();
 var key = Key.FromBase58("edsk4ZkGeBwDyFVjZLL2neV5FUeWNN4NJntFNWmWyEBNbRwa2u3jh1");
 
 // use this address to receive some tez
-var address = key.PubKey.Address; // tz1SauKgPRsTSuQRWzJA262QR8cKdw1d9pyK
+var address = key.PubKey.Address; // mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf
 ````
 
 ## Get some data from RPC
@@ -60,7 +60,7 @@ var content = new ManagerOperationContent[]
         Source = address,
         Counter = ++counter,
         Amount = 1000000, // 1 tez
-        Destination = "tz1KhnTgwoRRALBX6vRHRnydDGSBFsWtcJxc",
+        Destination = "mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf",
         GasLimit = 1500,
         Fee = 1000 // 0.001 tez
     }

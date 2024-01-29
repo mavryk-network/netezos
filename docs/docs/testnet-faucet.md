@@ -1,7 +1,7 @@
 ---
 title: Get started
 description: Short guide on how to get testnet Mavryk coins with Netmavryk, Mavryk SDK for .NET developers.
-keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, faucet,
+keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, faucet,
 ---
 
 # Testnet Faucets interaction
@@ -18,7 +18,7 @@ var key = new Key();
 var key = Key.FromBase58("edsk4ZkGeBwDyFVjZLL2neV5FUeWNN4NJntFNWmWyEBNbRwa2u3jh1");
 
 // use this address to receive some tez
-var address = key.Address; // tz1SauKgPRsTSuQRWzJA262QR8cKdw1d9pyK
+var address = key.Address; // mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf
 ```
 
 Let's go to the [Faucet Bot](https://t.me/tezos_faucet_bot) and get some test coins.
