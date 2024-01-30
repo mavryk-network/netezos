@@ -15,7 +15,7 @@
     <Product>Netmavryk.Ledger</Product>
     <Description>.Net Standard 2.0 library for interacting with Ledger device and working with Mavryk Ledger App</Description>
     <Version>0.9.2</Version>
-    <Copyright>Copyright © Baking Bad 2019</Copyright>
+    <Copyright>Copyright © Mavryk Dynamics 2024</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

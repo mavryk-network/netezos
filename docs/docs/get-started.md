@@ -21,7 +21,7 @@ var key = new Key();
 // or use existing one
 var key = Key.FromBase58("edsk4ZkGeBwDyFVjZLL2neV5FUeWNN4NJntFNWmWyEBNbRwa2u3jh1");
 
-// use this address to receive some tez
+// use this address to receive some mav
 var address = key.PubKey.Address; // mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf
 ````
 
@@ -53,16 +53,16 @@ var content = new ManagerOperationContent[]
         Counter = ++counter,
         PublicKey = key.PubKey.GetBase58(),
         GasLimit = 1500,
-        Fee = 1000 // 0.001 tez
+        Fee = 1000 // 0.001 mav
     },
     new TransactionContent
     {
         Source = address,
         Counter = ++counter,
-        Amount = 1000000, // 1 tez
+        Amount = 1000000, // 1 mav
         Destination = "mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf",
         GasLimit = 1500,
-        Fee = 1000 // 0.001 tez
+        Fee = 1000 // 0.001 mav
     }
 };
 

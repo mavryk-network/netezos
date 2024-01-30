@@ -17,7 +17,7 @@ var key = new Key();
 // or use existing one
 var key = Key.FromBase58("edsk4ZkGeBwDyFVjZLL2neV5FUeWNN4NJntFNWmWyEBNbRwa2u3jh1");
 
-// use this address to receive some tez
+// use this address to receive some mav
 var address = key.Address; // mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf
 ```
 
