@@ -8,8 +8,8 @@
     {{#keywords}}<meta name="keywords" content="{{keywords}}">{{/keywords}}
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@TezosBakingBad">
-    <meta name="twitter:creator" content="@TezosBakingBad">
+    <meta name="twitter:site" content="@MavrykDynamics">
+    <meta name="twitter:creator" content="@MavrykDynamics">
     <meta name="twitter:title" content="{{#title}}{{title}} | {{/title}}{{#_appTitle}}{{_appTitle}}{{/_appTitle}}">
     <meta name="twitter:description" content="{{#description}}{{description}}{{/description}}">
     <meta name="twitter:image" content="https://netmavryk.mavryk.org/logo.png">

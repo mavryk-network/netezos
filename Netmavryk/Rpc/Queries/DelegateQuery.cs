@@ -28,7 +28,7 @@
         public RpcObject CurrentBakingPower => new(this, "current_baking_power/");
         
         /// <summary>
-        /// Returns the current amount of the frozen deposits (in mutez).
+        /// Returns the current amount of the frozen deposits (in mumav).
         /// </summary>
         public RpcObject CurrentFrozenDeposits => new(this, "current_frozen_deposits/");
         

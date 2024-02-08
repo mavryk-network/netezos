@@ -58,12 +58,12 @@ namespace Netmavryk.Rpc.Queries
         public SmartRollupsQuery SmartRollups => new(this, "smart_rollups/");
         
         /// <summary>
-        /// Returns the total stake (in mutez) frozen on the chain.
+        /// Returns the total stake (in mumav) frozen on the chain.
         /// </summary>
         public RpcObject TotalFrozenStake => new(this, "total_frozen_stake/");
         
         /// <summary>
-        /// Returns the total supply (in mutez) available on the chain.
+        /// Returns the total supply (in mumav) available on the chain.
         /// </summary>
         public RpcObject TotalSupply => new(this, "total_supply/");
 

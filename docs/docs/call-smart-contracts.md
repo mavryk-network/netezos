@@ -1,7 +1,7 @@
 ---
 title: Mavryk smart contracts interaction
 description: Short guide on how to interact with Mavryk smart contracts using Netmavryk, Mavryk SDK for .NET developers.
-keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
+keywords: netmavryk, mavryk, mavryk sdk, mavryk csharp, mavryk csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
 ---
 
 # Mavryk smart contracts interaction
@@ -12,7 +12,7 @@ A full working code snippet of calling FA1.2 and FA2 transfers with Netmavryk SD
 ## Prerequisites
 
 First, we need an `Rpc` to interaction. You can find a more detailed description of working with the `Rpc` 
-in the [Mavryk Rpc](tezos-rpc.html) section. In our case we use the RPC with the `ghostnet` network.
+in the [Mavryk Rpc](mavryk-rpc.html) section. In our case we use the RPC with the `ghostnet` network.
 
 ```cs
 var rpc = new MavrykRpc("https://rpc.tzkt.io/ghostnet/");

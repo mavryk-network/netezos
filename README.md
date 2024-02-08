@@ -6,7 +6,7 @@
 
 > The first version of the library has been moved to the `v1` branch for historical purposes.
 
-Netmavryk is a cross-platform Mavryk SDK for .NET developers, simplifying the access and interaction with the [Mavryk](https://tezos.com/) blockchain.
+Netmavryk is a cross-platform Mavryk SDK for .NET developers, simplifying the access and interaction with the [Mavryk](https://mavryk.org/) blockchain.
 
 The following features have been implemented so far:
 
@@ -55,7 +55,7 @@ var address = key.PubKey.Address; // mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf
 ### Get some data from RPC
 
 ````cs
-using var rpc = new MavrykRpc("https://mainnet-tezos.giganode.io/");
+using var rpc = new MavrykRpc("https://rpc.mavryk.network/mainnet");
 
 // get a head block
 var head = await rpc.Blocks.Head.Hash.GetAsync<string>();

@@ -1,4 +1,4 @@
-namespace Netezos.Rpc.Queries.Post;
+namespace Netmavryk.Rpc.Queries.Post;
 
 /// <summary>
 /// Rpc query to access the contract's balance of ticket with specified ticketer, content type, and content.

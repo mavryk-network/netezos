@@ -1,7 +1,7 @@
 ---
 title: Mavryk RPC
 description: Short guide on how to interact with Mavryk nodes via RPC using Netmavryk, Mavryk SDK for .NET developers.
-keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk,
+keywords: netmavryk, mavryk, mavryk sdk, mavryk csharp, mavryk csharp sdk, blockchain, blockchain sdk,
 ---
 
 # Mavryk RPC
@@ -14,7 +14,7 @@ There is the main class [MavrykRpc](../api/Netmavryk.Rpc.MavrykRpc.html) which y
 Let's create an instance of the `MavrykRpc` class, build a simple query and execute it by calling `GetAsync()` method.
 
 ```cs
-using (var rpc = new MavrykRpc("https://mainnet-tezos.giganode.io/"))
+using (var rpc = new MavrykRpc("https://rpc.mavryk.network/mainnet"))
 {
     // get the head block
     var head = await rpc.Blocks.Head.GetAsync();

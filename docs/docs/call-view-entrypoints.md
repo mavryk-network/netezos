@@ -1,7 +1,7 @@
 ---
 title: Get data from view entrypoints
 description: Short guide on how to get data from Mavryk smart contracts via "view" entrypoints using Netmavryk, Mavryk SDK for .NET developers.
-keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
+keywords: netmavryk, mavryk, mavryk sdk, mavryk csharp, mavryk csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
 ---
  
 # Get data from "view" entrypoints
@@ -115,9 +115,9 @@ That contract contains the entrypoint `(nat %viewNat)` - that's exactly what we 
 Of course, we don't want to send a transaction just to get some data from the smart contract.
 It would be weird to wait a minute unless a transaction is included into a block and moreover to pay a tx fee.
  
-A common workaround is to use [/run_operation](https://gitlab.com/tezos/tezos/-/blob/master/docs/api/jakarta-openapi.json) RPC endpoint
+A common workaround is to use [/run_operation](https://gitlab.com/mavryk-network/mavryk-protocol/-/blob/master/docs/api/jakarta-openapi.json) RPC endpoint
 to simulate the transaction and see its result without injecting it into the blockchain, so we don't have to wait and we don't have to pay a fee.
-By the way, [/run_operation](https://gitlab.com/tezos/tezos/-/blob/master/docs/api/jakarta-openapi.json) ignores signature, so we don't even need to forge and sign the operation, just send its content.
+By the way, [/run_operation](https://gitlab.com/mavryk-network/mavryk-protocol/-/blob/master/docs/api/jakarta-openapi.json) ignores signature, so we don't even need to forge and sign the operation, just send its content.
  
 Let's create a transaction:
  

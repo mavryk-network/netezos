@@ -1,7 +1,7 @@
 ---
 title: Get started
 description: Short guide on how to get started with Netmavryk, Mavryk SDK for .NET developers.
-keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk,
+keywords: netmavryk, mavryk, mavryk sdk, mavryk csharp, mavryk csharp sdk, blockchain, blockchain sdk,
 ---
 
 # Get started
@@ -28,7 +28,7 @@ var address = key.PubKey.Address; // mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf
 ## Get some data from RPC
 
 ````cs
-using var rpc = new MavrykRpc("https://mainnet-tezos.giganode.io/");
+using var rpc = new MavrykRpc("https://rpc.mavryk.network/mainnet");
 
 // get a head block
 var head = await rpc.Blocks.Head.Hash.GetAsync<string>();

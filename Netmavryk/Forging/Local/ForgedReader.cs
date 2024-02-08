@@ -356,7 +356,7 @@ namespace Netmavryk.Forging
             return Utf8.Convert(ReadBytes(stringLength));
         }
 
-        public string ReadTz1Address()
+        public string ReadMv1Address()
         {
             return ReadBase58(Lengths.mv1.Decoded, Prefix.mv1);
         }

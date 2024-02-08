@@ -1,4 +1,4 @@
-﻿namespace Netezos.Rpc.Queries;
+﻿namespace Netmavryk.Rpc.Queries;
 
 /// <summary>
 /// Rpc query to access contract data

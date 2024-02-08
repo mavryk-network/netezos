@@ -1,4 +1,4 @@
-﻿namespace Netezos.Rpc.Queries;
+﻿namespace Netmavryk.Rpc.Queries;
 
 /// <summary>
 /// Rpc query to access issuance data
@@ -21,7 +21,7 @@ public class IssuanceQuery : RpcQuery
     public RpcObject ExpectedIssuance => new(this, "expected_issuance/");
         
     /// <summary>
-    /// Returns the current expected maximum issuance per minute (in mutez).
+    /// Returns the current expected maximum issuance per minute (in mumav).
     /// </summary>
     public RpcObject IssuancePerMinute => new(this, "issuance_per_minute/");
         

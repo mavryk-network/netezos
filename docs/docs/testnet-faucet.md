@@ -1,7 +1,7 @@
 ---
 title: Get started
 description: Short guide on how to get testnet Mavryk coins with Netmavryk, Mavryk SDK for .NET developers.
-keywords: netmavryk, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, faucet,
+keywords: netmavryk, mavryk, mavryk sdk, mavryk csharp, mavryk csharp sdk, blockchain, blockchain sdk, faucet,
 ---
 
 # Testnet Faucets interaction

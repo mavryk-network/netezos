@@ -97,7 +97,7 @@ namespace Netmavryk.Forging
         {
             return new ActivationContent
             {
-                Address = reader.ReadTz1Address(),
+                Address = reader.ReadMv1Address(),
                 Secret = Hex.Convert(reader.ReadBytes(20))
             };
         }
