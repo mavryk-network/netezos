@@ -4,11 +4,11 @@ using Netmavryk.Encoding;
 
 namespace Netmavryk.Contracts
 {
-    public sealed class MutezSchema : Schema, IFlat
+    public sealed class MumavSchema : Schema, IFlat
     {
         public override PrimType Prim => PrimType.mumav;
 
-        public MutezSchema(MichelinePrim micheline) : base(micheline) { }
+        public MumavSchema(MichelinePrim micheline) : base(micheline) { }
 
         internal override void WriteValue(Utf8JsonWriter writer, IMicheline value)
         {
