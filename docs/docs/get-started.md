@@ -28,7 +28,7 @@ var address = key.PubKey.Address; // mv1ExNdGhoAp2BBefJs1FuiRa9UJCKYSvNjf
 ## Get some data from RPC
 
 ````cs
-using var rpc = new MavrykRpc("https://rpc.mavryk.network/mainnet");
+using var rpc = new MavrykRpc("https://rpc.mavryk.network");
 
 // get a head block
 var head = await rpc.Blocks.Head.Hash.GetAsync<string>();

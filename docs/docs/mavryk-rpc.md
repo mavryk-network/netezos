@@ -14,7 +14,7 @@ There is the main class [MavrykRpc](../api/Netmavryk.Rpc.MavrykRpc.html) which y
 Let's create an instance of the `MavrykRpc` class, build a simple query and execute it by calling `GetAsync()` method.
 
 ```cs
-using (var rpc = new MavrykRpc("https://rpc.mavryk.network/mainnet"))
+using (var rpc = new MavrykRpc("https://rpc.mavryk.network"))
 {
     // get the head block
     var head = await rpc.Blocks.Head.GetAsync();
