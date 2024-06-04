@@ -1,0 +1,14 @@
+﻿{
+  "branch": "BLqznfya9HUtND5bc9u4TvD1XYoL1uVkitutj7iJnEMzjuRqnKY",
+  "contents": [
+    {
+      "kind": "update_consensus_key",
+      "source": "mv1HWKdtVgbmxavT28vgc14cJWXJj7R1fnDz",
+      "fee": "272",
+      "counter": "106",
+      "gas_limit": "1100",
+      "storage_limit": "0",
+      "pk": "sppk7aYY6kGrvKrYiSoQAcen8FubgiCrCHHkq1CEQCe5n4Xh3tXTcUd"
+    }
+  ]
+}

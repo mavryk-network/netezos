@@ -1,0 +1,29 @@
+﻿{
+  "branch": "BKym39WuCkVoX9kPrbHji7pMhotkSpTizN1CR3YxCgovHXaHcSu",
+  "contents": [
+    {
+      "kind": "smart_rollup_refute",
+      "source": "mv1Jn4T8NXSZBXfS6p8H4zsHuGnz173FMq6u",
+      "fee": "2568",
+      "counter": "28301",
+      "gas_limit": "6299",
+      "storage_limit": "0",
+      "rollup": "sr1St8gtsTU5Tj6R8FbvRDKviz1X8A1g6ZEy",
+      "opponent": "mv1B7kNLLeVDHDR3Dy6zGsZUUUb3ePkVCXj2",
+      "refutation": {
+        "refutation_kind": "move",
+        "choice": "836000000000",
+        "step": {
+          "pvm_step": "03000250db5bf4804e130239c96a5c3d5f9f5e116c79306f73ff827281ea283c",
+          "input_proof": {
+            "input_proof_kind": "reveal_proof",
+            "reveal_proof": {
+              "reveal_proof_kind": "raw_data_proof",
+              "raw_data": "ffffffffffffffffffffffffffffffffffffffffffffffffffff"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

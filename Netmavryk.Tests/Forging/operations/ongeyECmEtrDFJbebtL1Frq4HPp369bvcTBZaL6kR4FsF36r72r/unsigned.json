@@ -1,0 +1,61 @@
+﻿{
+  "branch": "BMVbvugyYywtK82goyfgoZToyG3bxR9AeojLQVCwAMsdLEciEBk",
+  "contents": [
+    {
+      "kind": "origination",
+      "source": "mv1FfgFPqUTDDULN7wBEtKpjLADa8XXnWu3W",
+      "fee": "1389",
+      "counter": "307028",
+      "gas_limit": "11140",
+      "storage_limit": "323",
+      "balance": "0",
+      "script": {
+        "code": [
+          {
+            "prim": "parameter",
+            "args": [
+              {
+                "prim": "unit",
+                "annots": [
+                  "%abc"
+                ]
+              }
+            ]
+          },
+          {
+            "prim": "storage",
+            "args": [
+              {
+                "prim": "unit"
+              }
+            ]
+          },
+          {
+            "prim": "code",
+            "args": [
+              [
+                {
+                  "prim": "CDR"
+                },
+                {
+                  "prim": "NIL",
+                  "args": [
+                    {
+                      "prim": "operation"
+                    }
+                  ]
+                },
+                {
+                  "prim": "PAIR"
+                }
+              ]
+            ]
+          }
+        ],
+        "storage": {
+          "prim": "Unit"
+        }
+      }
+    }
+  ]
+}

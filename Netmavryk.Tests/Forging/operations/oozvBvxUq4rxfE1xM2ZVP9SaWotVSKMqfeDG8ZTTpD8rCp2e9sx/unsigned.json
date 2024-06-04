@@ -1,0 +1,23 @@
+﻿{
+  "branch": "BKixvZvb7DapgS3gQ9E8jfUtsY1eHwKbvdA6Q8vX9E7Krqj9JZ4",
+  "contents": [
+    {
+      "kind": "reveal",
+      "source": "mv1UHBVKMKsnQWXD98MLymy5MKTh34jYvqNu",
+      "fee": "1257",
+      "counter": "5",
+      "gas_limit": "10000",
+      "storage_limit": "0",
+      "public_key": "edpkuLtU9k5zjyqH2C6StGH5ssfPyRqGURWwnQ8RRMyBX2zqfhpj1a"
+    },
+    {
+      "kind": "delegation",
+      "source": "mv1UHBVKMKsnQWXD98MLymy5MKTh34jYvqNu",
+      "fee": "1160",
+      "counter": "6",
+      "gas_limit": "10100",
+      "storage_limit": "0",
+      "delegate": "mv1NszgcMUUhWe4XkWmupruw3DWuGEKi2EmL"
+    }
+  ]
+}

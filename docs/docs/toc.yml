@@ -7,11 +7,11 @@
 - name: Testnet Faucet
   href: testnet-faucet.md 
 
-- name: Tezos RPC
-  href: tezos-rpc.md
+- name: Mavryk RPC
+  href: mavryk-rpc.md
 
-- name: Tezos Forging & Unforging
-  href: tezos-forging.md
+- name: Mavryk Forging & Unforging
+  href: mavryk-forging.md
 
 - name: Smart Contracts
   items:

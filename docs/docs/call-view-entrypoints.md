@@ -1,14 +1,14 @@
 ---
 title: Get data from view entrypoints
-description: Short guide on how to get data from Tezos smart contracts via "view" entrypoints using Netezos, Tezos SDK for .NET developers.
-keywords: netezos, tezos, tezos sdk, tezos csharp, tezos csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
+description: Short guide on how to get data from Mavryk smart contracts via "view" entrypoints using Netmavryk, Mavryk SDK for .NET developers.
+keywords: netmavryk, mavryk, mavryk sdk, mavryk csharp, mavryk csharp sdk, blockchain, blockchain sdk, smart contracts, NFT, FA2, FA1.2
 ---
  
 # Get data from "view" entrypoints
  
 Often we need to access smart contract storage, to get specific data like token balance for a specific account, or total supply of some token, etc. 
  
-In Tezos there are two ways to get data from a smart contract:
+In Mavryk there are two ways to get data from a smart contract:
 - get the whole storage and try to find there raw data;
 - use "view" entrypoints to get processed data.
  
@@ -17,10 +17,10 @@ Let's see how to work with "view" entrypoints (from the outside).
 ## View entrypoints
  
 A `view` is an entrypoint that represents a computation that does not modify smart contract's state, but returns some result.
-In Tezos `view` entrypoints are actually the same entrypoints (technically), but following some conventions. 
+In Mavryk `view` entrypoints are actually the same entrypoints (technically), but following some conventions. 
 See more details [here](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-4/tzip-4.md#view-entrypoints).
  
-In contrast with `view` functions in Ethereum, which are very easy to use, `view` entrypoints in Tezos are much more complicated, because they do not return
+In contrast with `view` functions in Ethereum, which are very easy to use, `view` entrypoints in Mavryk are much more complicated, because they do not return
 a value directly, but pass it to the callback contract.
  
 ## Callback contracts
@@ -33,7 +33,7 @@ If you pass a result of type `a` to a callback of type `b` you will get a runtim
  
 Let's see how it works in a real example.
  
-This is a transaction that calls `getBalance` view entrypoint with parameter `tz1io...BtJKUP` and callback contract `KT1Md...XUhn1`.
+This is a transaction that calls `getBalance` view entrypoint with parameter `mv1XB...dfLLBf` and callback contract `KT1Md...XUhn1`.
 Note, by appending `%viewNat` to the contract address we can specify a particular entrypoint of the contract that should be used as a callback.
 
 ```json
@@ -47,7 +47,7 @@ Note, by appending `%viewNat` to the contract address we can specify a particula
       "prim": "Pair",
       "args": [
         {
-          "string": "tz1ioz62kDw6Gm5HApeQtc1PGmN2wPBtJKUP"         // with some args
+          "string": "mv1XBTPd4bESr2rWK9DG8RhQRnE1VmdfLLBf"         // with some args
         },
         {
           "string": "KT1MdfSC8xwRvxmd1UHANt158YtoFn4XUhn1%viewNat" // and callback contract
@@ -76,11 +76,11 @@ Note, by appending `%viewNat` to the contract address we can specify a particula
 So, we called `view` entrypoint by sending a transaction to a smart contract, then the smart contract produced
 an internal transaction to the `callback` contract with a result value in the parameters.
  
-## Call view entrypoints with Netezos
+## Call view entrypoints with Netmavryk
  
-We've just seen how `view` entrypoints work in Tezos: you send a transaction to the smart contract, then the smart contract produces
+We've just seen how `view` entrypoints work in Mavryk: you send a transaction to the smart contract, then the smart contract produces
 an internal transaction with result value in its parameters and sends it to the `callback` contract. 
-With Netezos we will do basically the same things.
+With Netmavryk we will do basically the same things.
 
 Let's see, how to get [FA1.2 token](https://ghostnet.tzkt.io/KT1EwXFWoG9bYebmF4pYw72aGjwEnBWefgW5/code)
 balance by calling `getBalance` entrypoint.
@@ -115,18 +115,18 @@ That contract contains the entrypoint `(nat %viewNat)` - that's exactly what we 
 Of course, we don't want to send a transaction just to get some data from the smart contract.
 It would be weird to wait a minute unless a transaction is included into a block and moreover to pay a tx fee.
  
-A common workaround is to use [/run_operation](https://gitlab.com/tezos/tezos/-/blob/master/docs/api/jakarta-openapi.json) RPC endpoint
+A common workaround is to use [/run_operation](https://gitlab.com/mavryk-network/mavryk-protocol/-/blob/master/docs/api/jakarta-openapi.json) RPC endpoint
 to simulate the transaction and see its result without injecting it into the blockchain, so we don't have to wait and we don't have to pay a fee.
-By the way, [/run_operation](https://gitlab.com/tezos/tezos/-/blob/master/docs/api/jakarta-openapi.json) ignores signature, so we don't even need to forge and sign the operation, just send its content.
+By the way, [/run_operation](https://gitlab.com/mavryk-network/mavryk-protocol/-/blob/master/docs/api/jakarta-openapi.json) ignores signature, so we don't even need to forge and sign the operation, just send its content.
  
 Let's create a transaction:
  
 ```cs
-var sender   = "tz1ioz62kDw6Gm5HApeQtc1PGmN2wPBtJKUP";
+var sender   = "mv1XBTPd4bESr2rWK9DG8RhQRnE1VmdfLLBf";
 var fa12     = "KT1EwXFWoG9bYebmF4pYw72aGjwEnBWefgW5";
 var callback = "KT1MdfSC8xwRvxmd1UHANt158YtoFn4XUhn1%viewNat";
             
-var rpc = new TezosRpc("https://rpc.tzkt.io/ghostnet/");
+var rpc = new MavrykRpc("https://rpc.tzkt.io/ghostnet/");
 var counter = await rpc.Blocks.Head.Context.Contracts[sender].Counter.GetAsync<int>();
  
 var tx = new TransactionContent
@@ -330,7 +330,7 @@ So in the end we will get:
 [
   {
     "request":{
-      "owner":"tz1ioz62kDw6Gm5HApeQtc1PGmN2wPBtJKUP",
+      "owner":"mv1XBTPd4bESr2rWK9DG8RhQRnE1VmdfLLBf",
       "token_id":"0"
     },
     "balance":"12345678912"

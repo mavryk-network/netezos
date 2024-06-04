@@ -1,0 +1,18 @@
+﻿{
+  "branch": "BLpiGot997JRMKyrYoP8MmjVMWHHXMiLj17gue86uNaRnip8jux",
+  "contents": [
+    {
+      "kind": "smart_rollup_timeout",
+      "source": "mv1KkBjCo17LLGhcVVv9GLGk33ojqTQRSiyW",
+      "fee": "753",
+      "counter": "23077",
+      "gas_limit": "4647",
+      "storage_limit": "0",
+      "rollup": "sr1QZkk1swognQW3dmiXvga3wVkEgBq7QFjE",
+      "stakers": {
+        "alice": "mv1KkBjCo17LLGhcVVv9GLGk33ojqTQRSiyW",
+        "bob": "mv1Ac54wcpB9uoseaPJAge1DyTRupJhEj8oW"
+      }
+    }
+  ]
+}

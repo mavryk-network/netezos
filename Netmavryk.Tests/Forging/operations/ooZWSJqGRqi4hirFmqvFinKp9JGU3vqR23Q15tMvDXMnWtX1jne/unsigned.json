@@ -1,0 +1,15 @@
+﻿{
+  "branch": "BL2MMMUwKAQEwPRADVRakfFuSjs5srswnq9E6ML6BSsxysCUfJj",
+  "contents": [
+    {
+      "kind": "transaction",
+      "source": "mv1X7oqyxbFVaARaTg9RYzyKoVyAu14XwLM9",
+      "fee": "8716",
+      "counter": "384438",
+      "gas_limit": "84610",
+      "storage_limit": "668",
+      "amount": "3000000",
+      "destination": "KT1FkBAuhTp3CVujteQmNbiYieatU4VRbaJ2"
+    }
+  ]
+}

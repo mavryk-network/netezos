@@ -1,0 +1,14 @@
+﻿{
+  "branch": "BKuBZQDosVc7SxkBwrqxiSS6E7sbsM9mtvQcuwJpz1r9VtBVQK4",
+  "contents": [
+    {
+      "kind": "tx_rollup_origination",
+      "tx_rollup_origination": {},
+      "source": "mv1QkdjNJDddvULiZjPdk9WcPLw41PFrGjX7",
+      "fee": "735",
+      "counter": "252414",
+      "gas_limit": "3838",
+      "storage_limit": "0"
+    }
+  ]
+}

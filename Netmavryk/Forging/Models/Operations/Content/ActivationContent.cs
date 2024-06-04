@@ -1,0 +1,16 @@
+﻿using System.Text.Json.Serialization;
+
+namespace Netmavryk.Forging.Models
+{
+    public class ActivationContent : OperationContent
+    {
+        [JsonPropertyName("kind")]
+        public override string Kind => "activate_account";
+
+        [JsonPropertyName("pkh")]
+        public string Address { get; set; } = null!;
+
+        [JsonPropertyName("secret")]
+        public string Secret { get; set; } = null!;
+    }
+}

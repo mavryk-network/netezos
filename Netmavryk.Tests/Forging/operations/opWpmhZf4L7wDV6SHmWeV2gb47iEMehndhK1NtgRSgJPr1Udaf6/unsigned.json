@@ -1,0 +1,72 @@
+﻿{
+  "branch": "BLML45YNFVsfV4osgM3NmFFbiR7WneDdUp8JXsgNvaCRDLFQD9D",
+  "contents": [
+    {
+      "kind": "transaction",
+      "source": "mv1PaZJhgqzNfrw4AeX63VaxHjKyWSo4sL2Q",
+      "fee": "2959",
+      "counter": "133561",
+      "gas_limit": "26226",
+      "storage_limit": "0",
+      "amount": "0",
+      "destination": "KT1M8MStwA1R5SuGx2V6AMvgd8dGAFYcEUmu",
+      "parameters": {
+        "entrypoint": "do",
+        "value": [
+          {
+            "prim": "NIL",
+            "args": [
+              {
+                "prim": "operation"
+              }
+            ]
+          },
+          {
+            "prim": "PUSH",
+            "args": [
+              {
+                "prim": "key_hash"
+              },
+              {
+                "string": "mv1PaZJhgqzNfrw4AeX63VaxHjKyWSo4sL2Q"
+              }
+            ]
+          },
+          {
+            "prim": "IMPLICIT_ACCOUNT"
+          },
+          {
+            "prim": "PUSH",
+            "args": [
+              {
+                "prim": "mumav"
+              },
+              {
+                "int": "1"
+              }
+            ]
+          },
+          {
+            "prim": "UNIT"
+          },
+          {
+            "prim": "TRANSFER_TOKENS"
+          },
+          {
+            "prim": "CONS"
+          },
+          {
+            "prim": "DIP",
+            "args": [
+              [
+                {
+                  "prim": "DROP"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

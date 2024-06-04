@@ -1,0 +1,15 @@
+﻿{
+  "branch": "BMdLZJyLhf5xKnU7mp3HcyFe4hrh8EwkGKZPjdkdqEHCDj3yJte",
+  "contents": [
+    {
+      "kind": "transaction",
+      "source": "mv1AuD9MEDU8Pb5TPRfJJxVzXtq2FtrP2kLy",
+      "fee": "30941",
+      "counter": "377726",
+      "gas_limit": "306871",
+      "storage_limit": "668",
+      "amount": "0",
+      "destination": "KT1FkBAuhTp3CVujteQmNbiYieatU4VRbaJ2"
+    }
+  ]
+}

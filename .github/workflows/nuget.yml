@@ -19,6 +19,6 @@ jobs:
       - name: Build and publish package if version changed
         uses: alirezanet/publish-nuget@v3.0.3
         with:
-          PROJECT_FILE_PATH: Netezos/Netezos.csproj
-          PACKAGE_NAME: Netezos
+          PROJECT_FILE_PATH: Netmavryk/Netmavryk.csproj
+          PACKAGE_NAME: Netmavryk
           NUGET_KEY: ${{ secrets.NUGET_KEY }}

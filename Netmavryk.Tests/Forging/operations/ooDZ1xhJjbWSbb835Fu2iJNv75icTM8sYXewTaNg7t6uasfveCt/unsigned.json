@@ -1,0 +1,21 @@
+﻿{
+  "branch": "BMA2a4LdWa8NDzbMS4XfbESvdEiMTdVHWuWrY94kEL3a4sXDtpz",
+  "contents": [
+    {
+      "kind": "transaction",
+      "source": "mv1Az8tnHsnbTEgSWcAiL2C2qDouMD5BH8aY",
+      "fee": "76809",
+      "counter": "37",
+      "gas_limit": "765490",
+      "storage_limit": "20250",
+      "amount": "100",
+      "destination": "KT1Acw7VqQiurPC6tVvbN5ygxAnxh4SYzAFB",
+      "parameters": {
+        "entrypoint": "default",
+        "value": {
+          "int": "70"
+        }
+      }
+    }
+  ]
+}
