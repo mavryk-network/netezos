@@ -22,8 +22,8 @@
         public RpcObject ConsensusKey => new(this, "consensus_key/");
         
         /// <summary>
-        /// The baking power of a delegate, as computed from its current stake. This value is not used for computing baking rights
-        /// but only reflects the baking power that the delegate would have if a snapshot was taken at the current block.
+        /// The baking power of a delegate, as computed from its current stake. This value is not used for computing baking
+        /// rights but only reflects the baking power that the delegate would have if the cycle ended at the current block. 
         /// </summary>
         public RpcObject CurrentBakingPower => new(this, "current_baking_power/");
         
@@ -51,6 +51,16 @@
         /// Gets the query to the list of contracts that delegate to a given delegate
         /// </summary>
         public RpcObject DelegatedContracts => new(this, "delegated_contracts/");
+
+        /// <summary>
+        /// Gets the query to the pending denunciations for the given delegate.
+        /// </summary>
+        public RpcObject Denunciations => new(this, "denunciations/");
+
+        /// <summary>
+        /// Gets the query to the estimated shared pending slashed amount (in mutez) of a given delegate.
+        /// </summary>
+        public RpcObject EstimatedSharedPendingSlashedAmount => new(this, "estimated_shared_pending_slashed_amount/");
 
         /// <summary>
         /// Gets the query to the total frozen balances of a given delegate, this includes the frozen deposits, rewards and fees
@@ -86,11 +96,22 @@
         public RpcObject GracePeriod => new(this, "grace_period/");
 
         /// <summary>
+        /// Gets the query that returns true if the delegate is forbidden to participate in consensus.
+        /// </summary>
+        public RpcObject IsForbidden => new(this, "is_forbidden/");
+
+        /// <summary>
+        /// Gets the query to the minimum of delegated tez (in mutez) over the current cycle and the block level where
+        /// this value was last updated. 
+        /// </summary>
+        public RpcObject MinDelegatedInCurrentCycle => new(this, "min_delegated_in_current_cycle/");
+
+        /// <summary>
         /// Returns cycle and level participation information. In particular this indicates, in the field 'expected_cycle_activity',
-        /// the number of slots the delegate is expected to have in the cycle based on its active stake. The field 'minimal_cycle_activity' indicates the minimal endorsing slots in the cycle required to get endorsing rewards.
-        /// It is computed based on 'expected_cycle_activity. The fields 'missed_slots' and 'missed_levels' indicate the number of missed endorsing slots and missed levels (for endorsing) in the cycle so far.
-        /// 'missed_slots' indicates the number of missed endorsing slots in the cycle so far. The field 'remaining_allowed_missed_slots' indicates the remaining amount of endorsing slots that can be missed in the cycle before forfeiting the rewards.
-        /// Finally, 'expected_endorsing_rewards' indicates the endorsing rewards that will be distributed at the end of the cycle if activity at that point will be greater than the minimal required; if the activity is already known to be below the required minimum, then the rewards are zero.
+        /// the number of slots the delegate is expected to have in the cycle based on its active stake. The field 'minimal_cycle_activity' indicates the minimal attesting slots in the cycle required to get attesting rewards.
+        /// It is computed based on 'expected_cycle_activity. The fields 'missed_slots' and 'missed_levels' indicate the number of missed attesting slots and missed levels (for attesting) in the cycle so far.
+        /// 'missed_slots' indicates the number of missed attesting slots in the cycle so far. The field 'remaining_allowed_missed_slots' indicates the remaining amount of attesting slots that can be missed in the cycle before forfeiting the rewards.
+        /// Finally, 'expected_attesting_rewards' indicates the attesting rewards that will be distributed at the end of the cycle if activity at that point will be greater than the minimal required; if the activity is already known to be below the required minimum, then the rewards are zero.
         /// </summary>
         public RpcObject Participation => new(this, "participation/");
 

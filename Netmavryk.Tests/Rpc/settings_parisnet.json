@@ -1,0 +1,10 @@
+﻿{
+  "node": "https://parisnet.rpc.mavryk.network",
+  "testContract": "KT1RfKYjLYpGBQ1YGSKoSoYEYwpJPFZrvmwH",
+  "testEntrypoint": "default",
+  "testDelegate": "mv1CyTQb22Pg5wYSEEvbbQx15aSST23UMt8B",
+  "testInactive": "mv2Wsvu7TuiVt3m6mYPLoqxysiLebkcmqJuv",
+  "testSmartRollup": "sr1QurxjyVCePny7i5kHWq1w8W95LsFLxUUk",
+  "keyHash": "exprvBfbrdZVCjkmcsJRpioTnZdos3RLMZUDTK2AyFURY423xuWX4N",
+  "bigMapId": "2"
+}

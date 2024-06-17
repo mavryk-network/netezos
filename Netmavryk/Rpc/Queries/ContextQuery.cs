@@ -1,4 +1,5 @@
-﻿using Netmavryk.Rpc.Queries.Post;
+using Netmavryk.Rpc.Queries.Dal;
+using Netmavryk.Rpc.Queries.Post;
 
 namespace Netmavryk.Rpc.Queries
 {
@@ -26,6 +27,11 @@ namespace Netmavryk.Rpc.Queries
         /// Gets the query to all existing contracts (including non-empty default contracts)
         /// </summary>
         public ContractsQuery Contracts => new(this, "contracts/");
+
+        /// <summary>
+        /// Gets the query to Data-Availability Layer
+        /// </summary>
+        public DalQuery Dal => new(this, "dal/");
 
         /// <summary>
         /// Gets the query to all registered delegates

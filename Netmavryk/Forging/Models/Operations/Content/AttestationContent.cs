@@ -1,11 +1,12 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Numerics;
+using System.Text.Json.Serialization;
 
 namespace Netmavryk.Forging.Models
 {
-    public class EndorsementContent : OperationContent
+    public class AttestationContent : OperationContent
     {
         [JsonPropertyName("kind")]
-        public override string Kind => "endorsement";
+        public override string Kind => DalAttestation == null ? "attestation" : "attestation_with_dal";
 
         [JsonPropertyName("slot")]
         public int Slot { get; set; }
@@ -18,5 +19,9 @@ namespace Netmavryk.Forging.Models
 
         [JsonPropertyName("block_payload_hash")]
         public string PayloadHash { get; set; } = null!;
+
+        [JsonPropertyName("dal_attestation")]
+        [JsonConverter(typeof(BigIntegerNullableStringConverter))]
+        public BigInteger? DalAttestation { get; set; }
     }
 }

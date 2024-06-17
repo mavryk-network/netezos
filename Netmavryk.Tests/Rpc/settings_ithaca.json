@@ -1,9 +1,0 @@
-{
-  "node": "https://rpc.tzkt.io/ithacanet/",
-  "testContract": "KT1GHz4zehbss9hxsYsTbppRgozXxaLJLM2R",
-  "testEntrypoint": "do",
-  "testDelegate": "mv1NszgcMUUhWe4XkWmupruw3DWuGEKi2EmL",
-  "testInactive": "mv1Mfgo678xk4SNGWuxbxQY9hn5dQnuLQYKi",
-  "keyHash": "expru2dKqDfZG8hu4wNGkiyunvq2hdSKuVYtcKta7BWP6Q18oNxKjS",
-  "bigMapId": "10"
-}
