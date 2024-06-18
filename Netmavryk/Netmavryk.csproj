@@ -20,8 +20,8 @@
 		<Authors>Groxan</Authors>
 		<Product>Netmavryk</Product>
 		<Description>.NET SDK for Mavryk blockchain (.NET Stansard 2.0)</Description>
-		<Version>2.9.0</Version>
-		<Copyright>Copyright © Mavryk Dynamics 2024</Copyright>
+		<Version>2.10.1</Version>
+		<Copyright>Copyright © Baking Bad 2019-2024</Copyright>
 	</PropertyGroup>
 	
 	<ItemGroup>
@@ -29,7 +29,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Dynamic.Json" Version="1.4.0" />
+		<PackageReference Include="Dynamic.Json" Version="1.4.1" />
 		<PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
 	</ItemGroup>
 

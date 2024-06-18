@@ -27,6 +27,16 @@ namespace Netmavryk.Tests.Rpc
         }
 
         [Fact]
+        public async Task TestHelpersAttestationRights()
+        {
+            var query = Rpc.Blocks.Head.Helpers.AttestationRights;
+            Assert.Equal($"chains/main/blocks/head/helpers/attestation_rights", query.ToString());
+
+            var res = await query.GetAsync();
+            Assert.True(res is DJsonArray);
+        }
+
+        [Fact]
         public async Task TestHelpersCurrentLevel()
         {
             var query = Rpc.Blocks.Head.Helpers.CurrentLevel;
@@ -34,16 +44,6 @@ namespace Netmavryk.Tests.Rpc
 
             var res = await query.GetAsync();
             Assert.True(res is DJsonObject);
-        }
-
-        [Fact]
-        public async Task TestHelpersEndorsingRights()
-        {
-            var query = Rpc.Blocks.Head.Helpers.EndorsingRights;
-            Assert.Equal($"chains/main/blocks/head/helpers/endorsing_rights", query.ToString());
-
-            var res = await query.GetAsync();
-            Assert.True(res is DJsonArray);
         }
 
         [Fact]

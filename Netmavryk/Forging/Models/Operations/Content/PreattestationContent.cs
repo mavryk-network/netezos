@@ -2,10 +2,10 @@
 
 namespace Netmavryk.Forging.Models
 {
-    public class PreendorsementContent : OperationContent
+    public class PreattestationContent : OperationContent
     {
         [JsonPropertyName("kind")]
-        public override string Kind => "preendorsement";
+        public override string Kind => "preattestation";
 
         [JsonPropertyName("slot")]
         public int Slot { get; set; }

@@ -162,6 +162,7 @@ namespace Netmavryk.Encoding
         LAMBDA_REC,
         TICKET,
         BYTES,
-        NAT
+        NAT,
+        Ticket
     }
 }

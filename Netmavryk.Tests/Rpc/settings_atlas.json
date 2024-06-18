@@ -1,6 +1,6 @@
 {
-  "node": "https://rpc.tzkt.io/oxfordnet/",
-  "testContract": "KT1XtHJBXF3aAwggHrZh1fUbzaHc5MmB6QDs",
+  "node": "https://atlasnet.rpc.mavryk.network",
+  "testContract": "KT1RfKYjLYpGBQ1YGSKoSoYEYwpJPFZrvmwH",
   "testEntrypoint": "default",
   "testDelegate": "mv1CyTQb22Pg5wYSEEvbbQx15aSST23UMt8B",
   "testInactive": "mv2Wsvu7TuiVt3m6mYPLoqxysiLebkcmqJuv",

@@ -19,14 +19,15 @@ namespace Netmavryk.Forging.Models
             sideReader.Read();
             return sideReader.GetString() switch
             {
-                "endorsement" => JsonSerializer.Deserialize<EndorsementContent>(ref reader, options),
-                "preendorsement" => JsonSerializer.Deserialize<PreendorsementContent>(ref reader, options),
+                "attestation" => JsonSerializer.Deserialize<AttestationContent>(ref reader, options),
+                "attestation_with_dal" => JsonSerializer.Deserialize<AttestationContent>(ref reader, options),
+                "preattestation" => JsonSerializer.Deserialize<PreattestationContent>(ref reader, options),
                 "ballot" => JsonSerializer.Deserialize<BallotContent>(ref reader, options),
                 "proposals" => JsonSerializer.Deserialize<ProposalsContent>(ref reader, options),
                 "activate_account" => JsonSerializer.Deserialize<ActivationContent>(ref reader, options),
                 "double_baking_evidence" => JsonSerializer.Deserialize<DoubleBakingContent>(ref reader, options),
-                "double_endorsement_evidence" => JsonSerializer.Deserialize<DoubleEndorsementContent>(ref reader, options),
-                "double_preendorsement_evidence" => JsonSerializer.Deserialize<DoublePreendorsementContent>(ref reader, options),
+                "double_attestation_evidence" => JsonSerializer.Deserialize<DoubleAttestationContent>(ref reader, options),
+                "double_preattestation_evidence" => JsonSerializer.Deserialize<DoublePreattestationContent>(ref reader, options),
                 "seed_nonce_revelation" => JsonSerializer.Deserialize<SeedNonceRevelationContent>(ref reader, options),
                 "vdf_revelation" => JsonSerializer.Deserialize<VdfRevelationContent>(ref reader, options),
                 "drain_delegate" => JsonSerializer.Deserialize<DrainDelegateContent>(ref reader, options),
@@ -56,6 +57,13 @@ namespace Netmavryk.Forging.Models
                 "smart_rollup_publish" => JsonSerializer.Deserialize<SrPublishContent>(ref reader, options),
                 "smart_rollup_recover_bond" => JsonSerializer.Deserialize<SrRecoverBondContent>(ref reader, options),
                 "smart_rollup_refute" => JsonSerializer.Deserialize<SrRefuteContent>(ref reader, options),
+                "dal_publish_commitment" => JsonSerializer.Deserialize<DalPublishCommitmentContent>(ref reader, options),
+                #region deprecated
+                "endorsement" => JsonSerializer.Deserialize<AttestationContent>(ref reader, options),
+                "preendorsement" => JsonSerializer.Deserialize<PreattestationContent>(ref reader, options),
+                "double_endorsement_evidence" => JsonSerializer.Deserialize<DoubleAttestationContent>(ref reader, options),
+                "double_preendorsement_evidence" => JsonSerializer.Deserialize<DoublePreattestationContent>(ref reader, options),
+                #endregion
                 _ => throw new JsonException("Invalid operation kind"),
             };
         }
