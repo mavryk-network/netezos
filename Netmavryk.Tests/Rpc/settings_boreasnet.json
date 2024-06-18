@@ -1,5 +1,5 @@
 ﻿{
-  "node": "https://parisnet.rpc.mavryk.network",
+  "node": "https://boreasnet.rpc.mavryk.network",
   "testContract": "KT1RfKYjLYpGBQ1YGSKoSoYEYwpJPFZrvmwH",
   "testEntrypoint": "default",
   "testDelegate": "mv1CyTQb22Pg5wYSEEvbbQx15aSST23UMt8B",
